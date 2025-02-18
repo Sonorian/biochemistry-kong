@@ -94,7 +94,7 @@
       {
         "file": "assets/StartingPlayer.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/StartingPlayer.png\",\"extension\":\".png\"}",
         "name": "assets\\StartingPlayer.png",
         "smoothed": true,
         "userAdded": false
@@ -168,6 +168,14 @@
         "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -199,7 +207,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749988914,
+        "zoomFactor": 0.6455105703311529,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -214,8 +222,8 @@
           "name": "Platformer_Character",
           "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
           "width": 79,
-          "x": 128,
-          "y": 256,
+          "x": 113,
+          "y": 496,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -272,51 +280,34 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 9,
           "customSize": true,
           "depth": 1,
           "height": 64,
           "keepRatio": true,
           "layer": "",
-          "name": "Platform_Ground",
-          "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-          "width": 864,
-          "x": 64,
-          "y": 544,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Platform_Ground",
+          "name": "Platform_Passthrough",
           "persistentUuid": "672ee5c6-d2bb-4ae4-bc77-78d15064dd68",
-          "width": 288,
-          "x": 928,
-          "y": 416,
+          "width": 722,
+          "x": 90,
+          "y": 340,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 352,
           "customSize": true,
           "depth": 1,
           "height": 64,
           "keepRatio": true,
           "layer": "",
-          "name": "Platform_Ground",
+          "name": "Platform_Passthrough",
           "persistentUuid": "e595746c-dfaa-4c91-a246-d36934b5a906",
-          "width": 288,
-          "x": 64,
-          "y": 352,
+          "width": 655,
+          "x": 523,
+          "y": 96,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -382,6 +373,56 @@
           "x": 1088,
           "y": 352,
           "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform_Ground",
+          "persistentUuid": "1146b00f-e267-4bcf-8aa1-12c27d1cb69d",
+          "width": 637,
+          "x": 0,
+          "y": 654,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 346,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform_Ground",
+          "persistentUuid": "701abda3-83a7-456d-bd83-83b3e35628c4",
+          "width": 632,
+          "x": 617,
+          "y": 580,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Barrel",
+          "persistentUuid": "70299a05-66f8-4e62-80ec-7afcb987ae8f",
+          "width": 0,
+          "x": 1116,
+          "y": 147,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -551,6 +592,25 @@
         {
           "assetStoreId": "",
           "height": 64,
+          "name": "Platform_Passthrough",
+          "texture": "assets\\StartingGround.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 64,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 64,
           "name": "Platform_Ground",
           "texture": "assets\\StartingGround.png",
           "type": "TiledSpriteObject::TiledSprite",
@@ -560,10 +620,108 @@
           "behaviors": [
             {
               "name": "Platform",
+              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": false,
-              "platformType": "NormalPlatform",
               "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Barrel",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": true,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": true,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": false,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 31.5
+                          },
+                          {
+                            "x": 8.5,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 64,
+                            "y": 33.5
+                          },
+                          {
+                            "x": 54.5,
+                            "y": 56
+                          },
+                          {
+                            "x": 32,
+                            "y": 64
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 53.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -575,6 +733,9 @@
             "objectName": "Platformer_Character"
           },
           {
+            "objectName": "Platform_Passthrough"
+          },
+          {
             "objectName": "Platform_Ground"
           },
           {
@@ -582,6 +743,9 @@
           },
           {
             "objectName": "Coins"
+          },
+          {
+            "objectName": "Barrel"
           }
         ]
       },
@@ -625,6 +789,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Controls"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -678,28 +854,8 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"s\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::SimulateDownKey"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "PlatformerObject"
-              ]
-            }
-          ]
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -722,6 +878,67 @@
               "parameters": [
                 "Platformer_Character",
                 "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Barrel",
+                "Platform_Ground",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Barrel",
+                "0",
+                "500",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Barrel",
+                "Platform_Ground",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Barrel",
+                "-100",
+                "0",
+                ""
               ]
             }
           ]
