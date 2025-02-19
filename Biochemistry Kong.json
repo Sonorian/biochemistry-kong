@@ -186,6 +186,46 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/KresgeAcad.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\KresgeAcad.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/LadderBad.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LadderBad.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BillScott.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BillScott.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PlayerCharacter1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -414,8 +454,8 @@
           "name": "Platform_Ground",
           "persistentUuid": "701abda3-83a7-456d-bd83-83b3e35628c4",
           "width": 632,
-          "x": 617,
-          "y": 580,
+          "x": 601,
+          "y": 584,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -447,9 +487,42 @@
           "name": "Platform_ladder",
           "persistentUuid": "b04c072e-632d-42f2-9d06-6f75ccf195de",
           "width": 64,
-          "x": 449,
-          "y": 352,
+          "x": 443,
+          "y": 389,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "78249323-a3ed-426a-8ebf-49d7198ee04b",
+          "width": 0,
+          "x": 33,
+          "y": -31,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 759,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "NewTiledSprite",
+          "persistentUuid": "8a7cd03d-2335-46c4-b064-e72ca68ec9c2",
+          "width": 1306,
+          "x": -16,
+          "y": -13,
+          "zOrder": -11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -496,7 +569,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "quinn",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -505,7 +578,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartingPlayer.png",
+                      "image": "assets\\PlayerCharacter1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -557,70 +630,10 @@
           "behaviors": []
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Coins",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\StartingCoin.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 19,
-                            "y": 0
-                          },
-                          {
-                            "x": 19,
-                            "y": 18
-                          },
-                          {
-                            "x": 0,
-                            "y": 18
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "assetStoreId": "",
           "height": 64,
           "name": "Platform_Passthrough",
-          "texture": "assets\\StartingGround.png",
+          "texture": "assets\\KresgeAcad.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 64,
           "variables": [],
@@ -662,7 +675,7 @@
           "assetStoreId": "",
           "height": 64,
           "name": "Platform_Ground",
-          "texture": "assets\\StartingGround.png",
+          "texture": "assets\\KresgeAcad.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 64,
           "variables": [],
@@ -805,7 +818,7 @@
           "assetStoreId": "",
           "height": 64,
           "name": "Platform_ladder",
-          "texture": "assets\\StartingGround.png",
+          "texture": "assets\\LadderBad.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 64,
           "variables": [],
@@ -819,6 +832,77 @@
               "yGrabOffset": 0
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\BillScott.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 27
+                          },
+                          {
+                            "x": 250,
+                            "y": 27
+                          },
+                          {
+                            "x": 250,
+                            "y": 250
+                          },
+                          {
+                            "x": 0,
+                            "y": 250
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "NewTiledSprite",
+          "texture": "NewTiledSprite",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -826,6 +910,9 @@
         "children": [
           {
             "objectName": "Platformer_Character"
+          },
+          {
+            "objectName": "NewTiledSprite"
           },
           {
             "objectName": "Platform_Passthrough"
@@ -840,54 +927,14 @@
             "objectName": "Background"
           },
           {
-            "objectName": "Coins"
+            "objectName": "Barrel"
           },
           {
-            "objectName": "Barrel"
+            "objectName": "NewSprite"
           }
         ]
       },
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "Coins",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Coins",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "PickupCoin",
-                "",
-                "80",
-                "RandomFloatInRange(1,1.1)"
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -911,125 +958,115 @@
                 "",
                 "\"w\""
               ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "Platform_ladder",
-                "",
-                "",
-                "yes"
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "PlatformBehavior::SimulateJumpKey"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "PlatformerObject"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"w\""
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "Platform_Passthrough",
-                "",
-                "",
-                "yes"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::SimulateJumpKey"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "PlatformerObject"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "Platform_ladder",
-                "",
-                "",
-                "yes"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "Platform_ladder",
+                    "",
+                    "",
+                    "yes"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateJumpKey"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "PlatformerObject"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"w\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "Platform_Passthrough",
+                    "",
+                    "",
+                    "yes"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateJumpKey"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "PlatformerObject"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "Platform_Passthrough",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::SimulateUpKey"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "PlatformerObject"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::SimulateLadderKey"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "PlatformerObject"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "Platform_ladder",
+                    "",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "Platform_Passthrough",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLadderKey"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "PlatformerObject"
+                  ]
+                }
               ]
             }
           ]
@@ -1183,11 +1220,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
