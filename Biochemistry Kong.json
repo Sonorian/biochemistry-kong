@@ -226,6 +226,14 @@
         "name": "NewTiledSprite",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewTiledSprite.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
