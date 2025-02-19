@@ -234,7 +234,7 @@
           "width": 79,
           "x": 113,
           "y": 496,
-          "zOrder": 1,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -433,6 +433,23 @@
           "x": 1116,
           "y": 147,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 317,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform_ladder",
+          "persistentUuid": "b04c072e-632d-42f2-9d06-6f75ccf195de",
+          "width": 64,
+          "x": 449,
+          "y": 352,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -783,6 +800,25 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 64,
+          "name": "Platform_ladder",
+          "texture": "assets\\StartingGround.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 64,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "platformType": "Ladder",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "yGrabOffset": 0
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -793,6 +829,9 @@
           },
           {
             "objectName": "Platform_Passthrough"
+          },
+          {
+            "objectName": "Platform_ladder"
           },
           {
             "objectName": "Platform_Ground"
@@ -872,12 +911,121 @@
                 "",
                 "\"w\""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Platform_ladder",
+                "",
+                "",
+                "yes"
+              ]
             }
           ],
           "actions": [
             {
               "type": {
                 "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"w\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Platform_Passthrough",
+                "",
+                "",
+                "yes"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Platform_ladder",
+                "",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"w\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Platform_Passthrough",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateUpKey"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLadderKey"
               },
               "parameters": [
                 "Platformer_Character",
@@ -913,8 +1061,28 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"s\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateDownKey"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "PlatformerObject"
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1015,6 +1183,16 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
