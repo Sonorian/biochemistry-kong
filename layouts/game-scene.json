@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.33253870912508066,
+    "zoomFactor": 0.392516117548827,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "Platformer_Character",
       "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
       "width": 79,
-      "x": 113,
-      "y": 496,
+      "x": 104,
+      "y": 1738,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -86,40 +86,6 @@
       "x": 1104,
       "y": 576,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 9,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Passthrough",
-      "persistentUuid": "672ee5c6-d2bb-4ae4-bc77-78d15064dd68",
-      "width": 722,
-      "x": 90,
-      "y": 340,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 352,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Passthrough",
-      "persistentUuid": "e595746c-dfaa-4c91-a246-d36934b5a906",
-      "width": 655,
-      "x": 523,
-      "y": 96,
-      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -231,8 +197,8 @@
       "name": "Barrel",
       "persistentUuid": "70299a05-66f8-4e62-80ec-7afcb987ae8f",
       "width": 0,
-      "x": 800,
-      "y": 3,
+      "x": 807,
+      "y": -14,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -248,8 +214,8 @@
       "name": "Platform_ladder",
       "persistentUuid": "b04c072e-632d-42f2-9d06-6f75ccf195de",
       "width": 64,
-      "x": 443,
-      "y": 389,
+      "x": 626,
+      "y": 1595,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -261,11 +227,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "NewSprite",
+      "name": "Boss",
       "persistentUuid": "78249323-a3ed-426a-8ebf-49d7198ee04b",
       "width": 0,
-      "x": 99,
-      "y": 12,
+      "x": 43,
+      "y": -7,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -278,12 +244,131 @@
       "height": 1992,
       "keepRatio": true,
       "layer": "Background",
-      "name": "NewTiledSprite",
+      "name": "Background2",
       "persistentUuid": "8a7cd03d-2335-46c4-b064-e72ca68ec9c2",
       "width": 1222,
       "x": -67,
       "y": -13,
       "zOrder": -11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1679,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Ground",
+      "persistentUuid": "153b83a8-355a-470e-8f35-5b22f32459ab",
+      "width": 64,
+      "x": 1086,
+      "y": 187,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1878,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Ground",
+      "persistentUuid": "22ecc02c-a428-4347-8f7a-b2529862ce87",
+      "width": 64,
+      "x": -65,
+      "y": 18,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 7,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Passthrough",
+      "persistentUuid": "36fa63c9-386b-4f9e-a5cf-385a3b817e3f",
+      "width": 850,
+      "x": -9,
+      "y": 1586,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 354,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Passthrough",
+      "persistentUuid": "f4b88ba2-47a7-49e2-ab5d-db2e6f822bf3",
+      "width": 902,
+      "x": 209,
+      "y": 1361,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 7,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Passthrough",
+      "persistentUuid": "ae8239e0-19c5-4011-9d52-c8e6a492631d",
+      "width": 850,
+      "x": -47,
+      "y": 1133,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 7,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Passthrough",
+      "persistentUuid": "fa8f2f5b-b3e8-491f-986b-057d8c5fc700",
+      "width": 850,
+      "x": -26,
+      "y": 660,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 354,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Passthrough",
+      "persistentUuid": "c2306645-ccc6-42f8-be40-6bfcf442fe02",
+      "width": 902,
+      "x": 209,
+      "y": 904,
+      "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -597,7 +682,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "Boss",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -605,7 +690,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "Bill Scott",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -657,7 +742,7 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "NewTiledSprite",
+      "name": "Background2",
       "texture": "assets\\NewTiledSprite.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
@@ -733,7 +818,7 @@
         "objectName": "Platformer_Character"
       },
       {
-        "objectName": "NewTiledSprite"
+        "objectName": "Background2"
       },
       {
         "objectName": "NewSprite2"
@@ -754,7 +839,7 @@
         "objectName": "Barrel"
       },
       {
-        "objectName": "NewSprite"
+        "objectName": "Boss"
       }
     ]
   },
@@ -781,6 +866,17 @@
           "parameters": [
             "",
             "\"w\""
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "\"iframes\"",
+            ">",
+            "1"
           ]
         }
       ],
@@ -1017,6 +1113,15 @@
           "parameters": [
             "Platformer_Character",
             "\"iframes\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::SimulateDownKey"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "PlatformerObject"
           ]
         }
       ]
