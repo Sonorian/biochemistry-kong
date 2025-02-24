@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.392516117548827,
+    "zoomFactor": 0.36732575450588684,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -208,14 +208,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 317,
+      "height": 241,
       "keepRatio": true,
       "layer": "",
       "name": "Platform_ladder",
       "persistentUuid": "b04c072e-632d-42f2-9d06-6f75ccf195de",
       "width": 64,
       "x": 626,
-      "y": 1595,
+      "y": 1632,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -244,7 +244,7 @@
       "height": 1992,
       "keepRatio": true,
       "layer": "Background",
-      "name": "Background2",
+      "name": "BackgroundColor",
       "persistentUuid": "8a7cd03d-2335-46c4-b064-e72ca68ec9c2",
       "width": 1222,
       "x": -67,
@@ -349,8 +349,8 @@
       "name": "Platform_Passthrough",
       "persistentUuid": "fa8f2f5b-b3e8-491f-986b-057d8c5fc700",
       "width": 850,
-      "x": -26,
-      "y": 660,
+      "x": -20,
+      "y": 704,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -369,6 +369,90 @@
       "x": 209,
       "y": 904,
       "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 354,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_Passthrough",
+      "persistentUuid": "844117c0-2cee-4876-8d4a-8d4f61bd8daf",
+      "width": 902,
+      "x": 219,
+      "y": 487,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 157,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_ladder",
+      "persistentUuid": "05d93692-a195-4b28-a9e4-6a6c95b93e58",
+      "width": 64,
+      "x": 378,
+      "y": 1449,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 252,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_ladder",
+      "persistentUuid": "874a0644-aabe-4bef-85ce-42dea7e69921",
+      "width": 64,
+      "x": 242,
+      "y": 1160,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 163,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform_ladder",
+      "persistentUuid": "f4dcb11f-47dc-48de-b485-11226540cfef",
+      "width": 64,
+      "x": 760,
+      "y": 899,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderCollider",
+      "persistentUuid": "0f4a546b-b840-4811-bc94-e577d7186eb0",
+      "width": 0,
+      "x": 763,
+      "y": 852,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -393,6 +477,7 @@
           "JumpButton": "A"
         },
         {
+          "ladderClimbingSpeed": 100,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "ignoreDefaultControls": true,
@@ -404,7 +489,6 @@
           "gravity": 1050,
           "jumpSpeed": 717,
           "jumpSustainTime": 0.3,
-          "ladderClimbingSpeed": 200,
           "maxFallingSpeed": 800,
           "maxSpeed": 400,
           "slopeMaxAngle": 60,
@@ -742,7 +826,7 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "Background2",
+      "name": "BackgroundColor",
       "texture": "assets\\NewTiledSprite.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
@@ -809,6 +893,48 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "LadderCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "blank",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "LadderCollider",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -818,7 +944,7 @@
         "objectName": "Platformer_Character"
       },
       {
-        "objectName": "Background2"
+        "objectName": "BackgroundColor"
       },
       {
         "objectName": "NewSprite2"
@@ -840,6 +966,9 @@
       },
       {
         "objectName": "Boss"
+      },
+      {
+        "objectName": "LadderCollider"
       }
     ]
   },
@@ -1152,8 +1281,69 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "LadderCollider",
+            "Barrel",
+            "",
+            "",
+            "yes"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Platform_Passthrough",
+            "Physics2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Platform_Passthrough",
+            "\"barrelFall\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Platform_Passthrough",
+            "\"barrelFall\"",
+            ">=",
+            ".5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Platform_Passthrough",
+            "Physics2",
+            "yes"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

@@ -234,6 +234,14 @@
         "name": "assets\\NewTiledSprite.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/LadderCollider.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "LadderCollider",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
