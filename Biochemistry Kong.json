@@ -322,6 +322,22 @@
         "name": "beam9",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/LadderCollider.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LadderCollider.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ExclamationMark.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ExclamationMark.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
