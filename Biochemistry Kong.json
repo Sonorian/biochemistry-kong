@@ -274,6 +274,54 @@
         "name": "beam3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/beam4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam4.png\"}",
+        "name": "beam4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam5.png\"}",
+        "name": "beam5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam6.png\"}",
+        "name": "beam6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam7.png\"}",
+        "name": "beam7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam8.png\"}",
+        "name": "beam8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam9.png\"}",
+        "name": "beam9",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

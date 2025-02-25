@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.478934188453532,
+    "zoomFactor": 0.2912258866911161,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -513,8 +513,8 @@
       "name": "scottLaser",
       "persistentUuid": "ed22a43a-552f-48c4-999f-2a6eef93aac8",
       "width": 2253,
-      "x": -943,
-      "y": 1119,
+      "x": 173,
+      "y": 115,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -1016,112 +1016,112 @@
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "beam3",
+                  "image": "beam7",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "customCollisionMask": [
                     [
                       {
                         "x": 0,
-                        "y": 10
+                        "y": 11
                       },
                       {
                         "x": 32,
-                        "y": 10
+                        "y": 11
                       },
                       {
                         "x": 32,
-                        "y": 19
+                        "y": 21
                       },
                       {
                         "x": 0,
-                        "y": 19
+                        "y": 21
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "beam2",
+                  "image": "beam8",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "customCollisionMask": [
                     [
                       {
                         "x": 0,
-                        "y": 10
+                        "y": 11
                       },
                       {
                         "x": 32,
-                        "y": 10
+                        "y": 11
                       },
                       {
                         "x": 32,
-                        "y": 19
+                        "y": 21
                       },
                       {
                         "x": 0,
-                        "y": 19
+                        "y": 21
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "beam",
+                  "image": "beam9",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "customCollisionMask": [
                     [
                       {
                         "x": 0,
-                        "y": 10
+                        "y": 11
                       },
                       {
                         "x": 32,
-                        "y": 10
+                        "y": 11
                       },
                       {
                         "x": 32,
-                        "y": 19
+                        "y": 21
                       },
                       {
                         "x": 0,
-                        "y": 19
+                        "y": 21
                       }
                     ]
                   ]
@@ -1197,7 +1197,42 @@
           ]
         }
       ],
-      "actions": []
+      "actions": [
+        {
+          "type": {
+            "value": "SetAngle"
+          },
+          "parameters": [
+            "scottLaser",
+            "=",
+            "AngleBetweenPositions(Boss.CenterX(), Boss.CenterY()-20, Platformer_Character.CenterX(), Platformer_Character.CenterY())"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "scottLaser",
+            "=",
+            "Boss.CenterX()",
+            "=",
+            "Boss.CenterY() - 20"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Controls"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1216,18 +1251,6 @@
       ],
       "actions": [],
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Controls"
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1519,14 +1542,6 @@
             "scottLaser",
             "Animation"
           ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "scottLaser"
-          ]
         }
       ]
     },
@@ -1543,6 +1558,18 @@
             "",
             "",
             "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "LadderCollider",
+            "Platform_Passthrough",
+            "",
+            "",
+            ""
           ]
         }
       ],
@@ -1565,6 +1592,13 @@
             "Platform_Passthrough",
             "\"barrelFall\""
           ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     },
