@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3216911764705942,
+    "zoomFactor": 0.40575189059438965,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1124,12 +1124,18 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "scottLaser",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "shot",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -1161,19 +1167,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 11
+                        "y": 0
                       },
                       {
                         "x": 32,
-                        "y": 11
+                        "y": 0
                       },
                       {
                         "x": 32,
-                        "y": 21
+                        "y": 32
                       },
                       {
                         "x": 0,
-                        "y": 21
+                        "y": 32
                       }
                     ]
                   ]
@@ -1197,19 +1203,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 11
+                        "y": 0
                       },
                       {
                         "x": 32,
-                        "y": 11
+                        "y": 0
                       },
                       {
                         "x": 32,
-                        "y": 21
+                        "y": 32
                       },
                       {
                         "x": 0,
-                        "y": 21
+                        "y": 32
                       }
                     ]
                   ]
@@ -1233,19 +1239,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 11
+                        "y": 0
                       },
                       {
                         "x": 32,
-                        "y": 11
+                        "y": 0
                       },
                       {
                         "x": 32,
-                        "y": 21
+                        "y": 32
                       },
                       {
                         "x": 0,
-                        "y": 21
+                        "y": 32
                       }
                     ]
                   ]
@@ -1416,6 +1422,7 @@
       "comment": "Testing"
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1474,12 +1481,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "CompareObjectTimer"
               },
               "parameters": [
                 "Platformer_Character",
-                "hit",
-                "False",
+                "\"iframes\"",
+                ">=",
                 "1"
               ]
             }
@@ -1717,20 +1724,19 @@
       "actions": [
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "scottLaser"
+          ]
+        },
+        {
+          "type": {
             "value": "ResetObjectTimer"
           },
           "parameters": [
             "Platformer_Character",
             "\"iframes\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-          },
-          "parameters": [
-            "scottLaser",
-            "Animation"
           ]
         }
       ]
@@ -1866,21 +1872,20 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "\"iframes\"",
+            ">=",
+            "1"
+          ]
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\PickupCoin.wav",
-            "",
-            "",
-            ""
-          ]
-        },
         {
           "type": {
             "value": "ResetObjectTimer"
@@ -1898,6 +1903,36 @@
             "Platformer_Character",
             "PlatformerObject"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\PickupCoin.wav",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "hit",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     },
@@ -1955,6 +1990,17 @@
             },
             {
               "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "shot",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -1984,6 +2030,17 @@
                 "\"laserTimer\"",
                 ">=",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "shot",
+                "=",
+                ""
               ]
             },
             {
@@ -2027,6 +2084,17 @@
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "shot",
+                "=",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -2145,12 +2213,6 @@
                 ">",
                 "9"
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
@@ -2160,6 +2222,17 @@
               },
               "parameters": [
                 "scottLaser"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "shot",
+                "True",
+                ""
               ]
             }
           ]
