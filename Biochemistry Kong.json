@@ -242,6 +242,38 @@
         "name": "LadderCollider",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "beam",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "beam2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "beam3",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
