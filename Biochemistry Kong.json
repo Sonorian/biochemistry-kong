@@ -338,6 +338,21 @@
         "name": "assets\\ExclamationMark.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/speechbubble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\speechbubble.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/KOMTXTK_.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\KOMTXTK_.ttf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []

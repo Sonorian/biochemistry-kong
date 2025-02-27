@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.40575189059438965,
+    "zoomFactor": 0.46427658477654304,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -624,16 +624,50 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 231,
       "keepRatio": true,
       "layer": "",
       "name": "ExclamationMark",
       "persistentUuid": "e76e777d-fc05-4e19-b0e2-d3fd31bf0a66",
-      "width": 0,
-      "x": 1319,
-      "y": 1801,
+      "width": 231,
+      "x": 1248,
+      "y": 1732,
       "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SpeechBubble",
+      "persistentUuid": "2c103562-f684-49de-976c-1c6fd4258a5c",
+      "width": 0,
+      "x": 236,
+      "y": 9,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Dialogue",
+      "persistentUuid": "b2ee7244-ed3a-4120-90d2-034003d4404f",
+      "width": 581,
+      "x": 263,
+      "y": 60,
+      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1362,6 +1396,129 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "SpeechBubble",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\speechbubble.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 19
+                      },
+                      {
+                        "x": 128,
+                        "y": 19
+                      },
+                      {
+                        "x": 128,
+                        "y": 121
+                      },
+                      {
+                        "x": 0,
+                        "y": 121
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Dialogue",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "Intro",
+          "type": "string",
+          "value": "Welcome to BIOC100A. Quantum mechanics can be painful..."
+        },
+        {
+          "name": "Laser",
+          "type": "string",
+          "value": "Don't get caught in my X-RAY BEAM!"
+        },
+        {
+          "name": "Quiz",
+          "type": "string",
+          "value": "Who was more responsible for the discovery of the structure of DNA?"
+        },
+        {
+          "name": "NothingQ",
+          "type": "string",
+          "value": "What happens when you apply the annihilation operator to the ground state?"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "now he's saying few",
+      "font": "assets\\KOMTXTK_.ttf",
+      "textAlignment": "center",
+      "characterSize": 25,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "now he's saying few",
+        "font": "assets\\KOMTXTK_.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 25,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1405,6 +1562,12 @@
       },
       {
         "objectName": "ExclamationMark"
+      },
+      {
+        "objectName": "SpeechBubble"
+      },
+      {
+        "objectName": "Dialogue"
       }
     ]
   },
@@ -2350,6 +2513,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
