@@ -353,6 +353,29 @@
         "metadata": "",
         "name": "assets\\KOMTXTK_.ttf",
         "userAdded": false
+      },
+      {
+        "file": "assets/Divider.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Divider",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/KOMTXTKB.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\KOMTXTKB.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/beam9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\beam9.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

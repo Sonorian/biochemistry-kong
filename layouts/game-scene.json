@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.46427658477654304,
+    "zoomFactor": 0.29683998128829575,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -609,32 +609,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 208,
+      "height": 167,
       "keepRatio": true,
       "layer": "",
       "name": "LaserCollider",
       "persistentUuid": "640ada2f-9c9b-4777-b84d-1e2d342d56eb",
-      "width": 226,
-      "x": 781,
-      "y": 1582,
+      "width": 739,
+      "x": 339,
+      "y": 1322,
       "zOrder": 26,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 4,
-      "height": 231,
-      "keepRatio": true,
-      "layer": "",
-      "name": "ExclamationMark",
-      "persistentUuid": "e76e777d-fc05-4e19-b0e2-d3fd31bf0a66",
-      "width": 231,
-      "x": 1248,
-      "y": 1732,
-      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -668,6 +651,123 @@
       "x": 263,
       "y": 60,
       "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 100,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuizCollider",
+      "persistentUuid": "b9ab3100-1b44-46c0-a223-2d1506b47c3b",
+      "width": 850,
+      "x": 219,
+      "y": 997,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1823,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Divider",
+      "persistentUuid": "d2720a2a-e409-4a57-82d5-b4ab9a0aab59",
+      "width": 32,
+      "x": 517,
+      "y": 151,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1750,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "QuizFranklin",
+      "persistentUuid": "116391ea-2113-4404-8c5c-770b548376bd",
+      "width": 535,
+      "x": -1,
+      "y": 1000,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1833,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "QuizWatson",
+      "persistentUuid": "1575d28a-98bf-4df9-8684-14dc990037b1",
+      "width": 537,
+      "x": 538,
+      "y": 997,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 306,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "ExclamationMark",
+      "persistentUuid": "c4cddc8b-2ab7-4cb4-936b-68101cd8a1b7",
+      "width": 306,
+      "x": 1228,
+      "y": 1572,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "depth": 18,
+      "height": 551,
+      "layer": "Overlay",
+      "name": "QuizBeam",
+      "persistentUuid": "96661439-54bf-4dc9-861f-d5bb9bb995b1",
+      "width": 1949,
+      "x": 495,
+      "y": 685,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "QuizCount",
+      "persistentUuid": "850e55fb-e951-4797-8bd6-e4828157d916",
+      "width": 0,
+      "x": 495,
+      "y": 600,
+      "zOrder": 36,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1168,6 +1268,21 @@
           "name": "shot",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "warned",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -1479,7 +1594,12 @@
         {
           "name": "Quiz",
           "type": "string",
-          "value": "Who was more responsible for the discovery of the structure of DNA?"
+          "value": "Pop quiz! Who was more responsible for the discovery of the structure of DNA?"
+        },
+        {
+          "name": "QuizDone",
+          "type": "string",
+          "value": "Crystallographers rarely get the credit they deserve."
         },
         {
           "name": "NothingQ",
@@ -1519,6 +1639,296 @@
         "characterSize": 25,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "QuizCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "shown",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "two",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "one",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "zero",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "beamed",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Divider",
+      "texture": "Divider",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "QuizFranklin",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Rosalind Franklin",
+      "font": "assets\\KOMTXTKB.ttf",
+      "textAlignment": "center",
+      "characterSize": 100,
+      "color": {
+        "b": 26,
+        "g": 26,
+        "r": 65
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 10,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Rosalind Franklin",
+        "font": "assets\\KOMTXTKB.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 100,
+        "color": "65;26;26"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "QuizWatson",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "James Watson",
+      "font": "assets\\KOMTXTKB.ttf",
+      "textAlignment": "center",
+      "characterSize": 100,
+      "color": {
+        "b": 26,
+        "g": 26,
+        "r": 65
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 10,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "James Watson",
+        "font": "assets\\KOMTXTKB.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 100,
+        "color": "65;26;26"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "QuizCount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "three",
+          "type": "string",
+          "value": "3"
+        },
+        {
+          "name": "two",
+          "type": "string",
+          "value": "2"
+        },
+        {
+          "name": "one",
+          "type": "string",
+          "value": "1"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "3",
+      "font": "assets\\KOMTXTKB.ttf",
+      "textAlignment": "left",
+      "characterSize": 150,
+      "color": {
+        "b": 12,
+        "g": 12,
+        "r": 65
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 10,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "3",
+        "font": "assets\\KOMTXTKB.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 150,
+        "color": "65;12;12"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "QuizBeam",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\beam9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1564,10 +1974,28 @@
         "objectName": "ExclamationMark"
       },
       {
+        "objectName": "QuizCollider"
+      },
+      {
+        "objectName": "Divider"
+      },
+      {
         "objectName": "SpeechBubble"
       },
       {
         "objectName": "Dialogue"
+      },
+      {
+        "objectName": "QuizFranklin"
+      },
+      {
+        "objectName": "QuizWatson"
+      },
+      {
+        "objectName": "QuizCount"
+      },
+      {
+        "objectName": "QuizBeam"
       }
     ]
   },
@@ -1635,6 +2063,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1901,6 +2330,98 @@
             "Platformer_Character",
             "\"iframes\""
           ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Dialogue",
+            "Text",
+            "=",
+            "Dialogue.Intro"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "SpeechBubble",
+            "\"introTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Divider"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "QuizFranklin"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "QuizWatson"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "QuizCount"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "SpeechBubble",
+            "\"introTimer\"",
+            ">=",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "SpeechBubble"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Dialogue"
+          ]
         }
       ]
     },
@@ -2090,13 +2611,6 @@
             ""
           ]
         }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
       ]
     },
     {
@@ -2157,7 +2671,7 @@
               },
               "parameters": [
                 "scottLaser",
-                "shot",
+                "triggered",
                 "=",
                 ""
               ]
@@ -2177,6 +2691,17 @@
               "parameters": [
                 "LaserCollider",
                 "\"laserTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "triggered",
+                "True",
+                ""
               ]
             }
           ]
@@ -2201,7 +2726,7 @@
               },
               "parameters": [
                 "scottLaser",
-                "shot",
+                "warned",
                 "=",
                 ""
               ]
@@ -2216,14 +2741,54 @@
           "actions": [
             {
               "type": {
-                "value": "MettreXY"
+                "value": "SetCenter"
               },
               "parameters": [
                 "ExclamationMark",
                 "=",
-                "Platformer_Character.X()",
+                "Platformer_Character.CenterX()",
                 "=",
-                "Platformer_Character.Y()"
+                "Platformer_Character.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.Laser"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "warned",
+                "True",
+                ""
               ]
             }
           ]
@@ -2244,12 +2809,6 @@
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
@@ -2258,6 +2817,12 @@
                 "=",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2308,6 +2873,36 @@
                 "=",
                 "Boss.CenterY() - 20"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "shot",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "make exclamation mark flash?"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         },
@@ -2376,6 +2971,23 @@
                 ">",
                 "9"
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "done",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2389,11 +3001,628 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanObjectVariable"
               },
               "parameters": [
                 "scottLaser",
-                "shot",
+                "done",
+                "True",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Quiz",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "QuizCollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "ExclamationMark",
+                "=",
+                "Divider.CenterX()",
+                "=",
+                "Divider.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ExclamationMark",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.Quiz"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "triggered",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "shown",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Divider",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizCount",
+                "Text",
+                "=",
+                "QuizCount.three"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "QuizFranklin",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "QuizWatson",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "QuizCount",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "shown",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "two",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizCount",
+                "Text",
+                "=",
+                "QuizCount.two"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "two",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "one",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizCount",
+                "Text",
+                "=",
+                "QuizCount.one"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "one",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "zero",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "QuizCount"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "QuizBeam",
+                "=",
+                "QuizWatson.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.QuizDone"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ExclamationMark"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Divider"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "QuizFranklin"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "QuizWatson"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "zero",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "7"
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "QuizBeam",
+                "QuizBeam",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "7"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "beamed",
+                "=",
+                "false"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "QuizBeam"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "beamed",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "QuizCollider",
+                "\"quizTimer\"",
+                ">=",
+                "9"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "done",
+                "=",
+                "false"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "done",
                 "True",
                 ""
               ]
