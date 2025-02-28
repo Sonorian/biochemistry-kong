@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2687281874016852,
+    "zoomFactor": 0.2061051112535084,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -49,8 +49,8 @@
       "name": "Platformer_Character",
       "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
       "width": 79,
-      "x": 96,
-      "y": 446,
+      "x": 124,
+      "y": 1727,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -624,13 +624,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
       "keepRatio": true,
       "layer": "",
       "name": "SpeechBubble",
       "persistentUuid": "2c103562-f684-49de-976c-1c6fd4258a5c",
-      "width": 0,
+      "width": 629,
       "x": 236,
       "y": 9,
       "zOrder": 28,
@@ -659,14 +660,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 100,
+      "height": 103,
       "keepRatio": true,
       "layer": "",
       "name": "QuizCollider",
       "persistentUuid": "b9ab3100-1b44-46c0-a223-2d1506b47c3b",
-      "width": 850,
-      "x": 219,
-      "y": 997,
+      "width": 761,
+      "x": 10,
+      "y": 828,
       "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
@@ -748,9 +749,9 @@
       "layer": "Overlay",
       "name": "QuizBeam",
       "persistentUuid": "96661439-54bf-4dc9-861f-d5bb9bb995b1",
-      "width": 4551,
-      "x": -1452,
-      "y": -2554,
+      "width": 7621,
+      "x": -2987,
+      "y": -4089,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -784,7 +785,7 @@
       "width": 11567,
       "x": 1081,
       "y": -643,
-      "zOrder": 37,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -822,6 +823,39 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "VictoryCollider",
+      "persistentUuid": "5598a8e4-76c4-4054-8a1c-e884babb8201",
+      "width": 482,
+      "x": 295,
+      "y": 138,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Barrel",
+      "persistentUuid": "13bb8799-06c3-47e4-9ced-dce4e6ad5bdf",
+      "width": 0,
+      "x": 645,
+      "y": 1729,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -836,6 +870,11 @@
           "name": "hit",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "control",
+          "type": "boolean",
+          "value": true
         }
       ],
       "effects": [],
@@ -1367,19 +1406,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 13
                       },
                       {
                         "x": 32,
-                        "y": 0
+                        "y": 12.5
                       },
                       {
                         "x": 32,
-                        "y": 32
+                        "y": 19
                       },
                       {
                         "x": 0,
-                        "y": 32
+                        "y": 19.5
                       }
                     ]
                   ]
@@ -1403,19 +1442,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 7
                       },
                       {
                         "x": 32,
-                        "y": 0
+                        "y": 7
                       },
                       {
                         "x": 32,
-                        "y": 32
+                        "y": 25
                       },
                       {
                         "x": 0,
-                        "y": 32
+                        "y": 25
                       }
                     ]
                   ]
@@ -1661,6 +1700,11 @@
           "name": "NothingA",
           "type": "string",
           "value": "That's right - nothing."
+        },
+        {
+          "name": "Victory",
+          "type": "string",
+          "value": "Congratulations!"
         }
       ],
       "effects": [],
@@ -2062,8 +2106,54 @@
           "name": "time",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
         }
       ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "VictoryCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -2134,6 +2224,9 @@
       },
       {
         "objectName": "scottLaser"
+      },
+      {
+        "objectName": "VictoryCollider"
       },
       {
         "objectName": "LaserCollider"
@@ -2223,12 +2316,32 @@
             "Boss.CenterY() - 20"
           ]
         }
-      ],
-      "events": [
+      ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "NothingCollider",
+            "\"nothingTimer\"",
+            "<=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "ExclamationMark"
+          ]
         }
       ]
     },
@@ -2237,7 +2350,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2247,12 +2359,12 @@
           "conditions": [
             {
               "type": {
-                "value": "CompareObjectTimer"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "Platformer_Character",
-                "\"iframes\"",
-                ">=",
+                "control",
+                "True",
                 "1"
               ]
             }
@@ -2377,6 +2489,31 @@
                       "parameters": [
                         "Platformer_Character",
                         "PlatformerObject"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\jump-4.wav",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -2658,162 +2795,273 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Barrel-Ladder",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "LadderCollider",
-            "Barrel",
-            "",
-            "",
-            "yes"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "\"barrelFall\"",
+                ">=",
+                ".5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "Physics2",
+                "yes"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "LadderCollider",
-            "Platform_Passthrough",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "RNG",
-            "<",
-            "1"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "LadderCollider",
+                "Barrel",
+                "",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "LadderCollider",
+                "Platform_Passthrough",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "RNG",
+                "<",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "Physics2",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "\"barrelFall\""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Platform_Passthrough",
-            "Physics2",
-            "no"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Platform_Passthrough",
-            "\"barrelFall\""
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Hit Detection",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "hit",
-            "True",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\"",
+                ">",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\hit-2.wav",
+                "no",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "False",
+                ""
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "\"iframes\"",
-            ">=",
-            "1"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\"",
+                "<",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateDownKey"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\"",
+                ">=",
+                ".9"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "True",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "\"iframes\""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlatformBehavior::SimulateDownKey"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "PlatformerObject"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\PickupCoin.wav",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "hit",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Platform_Passthrough",
-            "\"barrelFall\"",
-            ">=",
-            ".5"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Platform_Passthrough",
-            "Physics2",
-            "yes"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -3081,11 +3329,6 @@
                 "textR": 0
               },
               "comment": "make exclamation mark flash?"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ]
         },
@@ -3100,7 +3343,7 @@
                 "LaserCollider",
                 "\"laserTimer\"",
                 ">=",
-                "4"
+                "3"
               ]
             },
             {
@@ -3113,30 +3356,63 @@
                 "<=",
                 "9"
               ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "scottLaser",
-                "",
-                "",
-                ""
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Platformer_Character",
-                "hit",
-                "True",
-                "True"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "scottLaser",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "hit",
+                    "True",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\laser-2.wav",
+                    "yes",
+                    "",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -3196,6 +3472,15 @@
               },
               "parameters": [
                 "Dialogue"
+              ]
+            },
+            {
+              "type": {
+                "value": "UnloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\laser-2.wav"
               ]
             },
             {
@@ -3651,6 +3936,18 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\laser-2.wav",
+                "yes",
+                "",
+                ""
+              ]
             }
           ],
           "events": [
@@ -3724,7 +4021,7 @@
                 "QuizCollider",
                 "\"quizTimer\"",
                 ">=",
-                "7"
+                "6"
               ]
             },
             {
@@ -3771,6 +4068,33 @@
               },
               "parameters": [
                 "QuizBeam"
+              ]
+            },
+            {
+              "type": {
+                "value": "UnloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\laser-2.wav"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
               ]
             }
           ]
@@ -4115,6 +4439,36 @@
               "parameters": [
                 "ExclamationMark"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\laser-2.wav",
+                "yes",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
             }
           ]
         },
@@ -4170,7 +4524,18 @@
                 "NothingCollider",
                 "\"nothingTimer\"",
                 ">=",
-                "7"
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "NothingCollider",
+                "done",
+                "=",
+                ""
               ]
             },
             {
@@ -4186,22 +4551,6 @@
                 "value": "Cache"
               },
               "parameters": [
-                "SpeechBubble"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Dialogue"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
                 "NothingBeam"
               ]
             },
@@ -4211,6 +4560,171 @@
               },
               "parameters": [
                 "NothingBeam"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "NothingCollider",
+                "done",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "UnloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\laser-2.wav"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Victory",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "NothingCollider",
+                "\"nothingTimer\"",
+                ">=",
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "QuizCollider",
+                "done",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "scottLaser",
+                "done",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "VictoryCollider",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.Victory"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "VictoryCollider",
+                    "\"victoryTimer\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "VictoryCollider",
+                "\"victoryTimer\"",
+                ">=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Victory\"",
+                ""
               ]
             }
           ]
