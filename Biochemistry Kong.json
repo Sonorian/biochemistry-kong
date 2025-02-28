@@ -414,6 +414,14 @@
         "name": "assets\\beam7.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PlayerCharacter2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
