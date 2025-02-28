@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.29683998128829575,
+    "zoomFactor": 0.5956437715226359,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -49,8 +49,8 @@
       "name": "Platformer_Character",
       "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
       "width": 79,
-      "x": 104,
-      "y": 1738,
+      "x": 77,
+      "y": 1116,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -518,8 +518,8 @@
       "name": "scottLaser",
       "persistentUuid": "ed22a43a-552f-48c4-999f-2a6eef93aac8",
       "width": 2253,
-      "x": 173,
-      "y": 115,
+      "x": -495,
+      "y": 155,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -748,9 +748,9 @@
       "layer": "Overlay",
       "name": "QuizBeam",
       "persistentUuid": "96661439-54bf-4dc9-861f-d5bb9bb995b1",
-      "width": 1949,
-      "x": 495,
-      "y": 685,
+      "width": 4551,
+      "x": -1452,
+      "y": -2554,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -768,6 +768,57 @@
       "x": 495,
       "y": 600,
       "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 28,
+      "height": 890,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NothingBeam",
+      "persistentUuid": "8f41c8f7-948a-466c-80f4-4e5493d7bfec",
+      "width": 7363,
+      "x": 1081,
+      "y": -643,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 28,
+      "height": 890,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NothingBeam",
+      "persistentUuid": "eeb22db2-b985-47e5-b3fe-cf63d0fd988e",
+      "width": 7392,
+      "x": 1080,
+      "y": 420,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 118,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NothingCollider",
+      "persistentUuid": "4985e0a2-595f-4ad9-a142-21af1bd21e8c",
+      "width": 677,
+      "x": 405,
+      "y": 297,
+      "zOrder": 38,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1929,6 +1980,107 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NothingBeam",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\beam9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 32
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NothingCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1996,6 +2148,12 @@
       },
       {
         "objectName": "QuizBeam"
+      },
+      {
+        "objectName": "NothingBeam"
+      },
+      {
+        "objectName": "NothingCollider"
       }
     ]
   },
@@ -3036,6 +3194,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Quiz",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3388,20 +3547,31 @@
           "actions": [
             {
               "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "QuizCount"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetCenterX"
               },
               "parameters": [
                 "QuizBeam",
                 "=",
                 "QuizWatson.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "QuizBeam",
+                "0",
+                "5000",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "QuizCount"
               ]
             },
             {
@@ -3458,6 +3628,13 @@
                 ""
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
           ]
         },
         {
@@ -3476,13 +3653,12 @@
             },
             {
               "type": {
-                "inverted": true,
                 "value": "CompareObjectTimer"
               },
               "parameters": [
                 "QuizCollider",
                 "\"quizTimer\"",
-                ">=",
+                "<",
                 "7"
               ]
             },
@@ -3491,7 +3667,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "QuizBeam",
+                "Platformer_Character",
                 "QuizBeam",
                 "",
                 "",
@@ -3564,6 +3740,14 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "QuizBeam"
+              ]
             }
           ]
         },
@@ -3630,6 +3814,22 @@
           ]
         }
       ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Nothing",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
       "parameters": []
     }
   ],
