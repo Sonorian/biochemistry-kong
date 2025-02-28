@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Intro",
   "gdVersion": {
     "build": 224,
     "major": 5,
@@ -11,7 +11,7 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
-    "orientation": "landscape",
+    "orientation": "portrait",
     "packageName": "com.example.gamename",
     "pixelsRounding": false,
     "projectUuid": "ff1cb66d-25d9-4d34-9477-ea56bdb3f338",
@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-platformer",
     "version": "1.0.0",
-    "name": "Biochemistry Kong",
+    "name": "Biochemistry Jump",
     "description": "",
     "author": "",
     "windowWidth": 1080,

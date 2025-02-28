@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5046279681901057,
+    "zoomFactor": 0.4275195988849447,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -3386,7 +3386,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Laser",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3458,7 +3457,7 @@
                 "LaserCollider",
                 "\"laserTimer\"",
                 ">=",
-                "1"
+                ".5"
               ]
             },
             {
