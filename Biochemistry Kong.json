@@ -422,6 +422,14 @@
         "name": "assets\\PlayerCharacter2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/lectern.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\lectern.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

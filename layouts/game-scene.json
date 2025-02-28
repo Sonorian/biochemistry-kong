@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4275195988849447,
+    "zoomFactor": 0.5762136568179951,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -230,9 +230,9 @@
       "name": "Boss",
       "persistentUuid": "78249323-a3ed-426a-8ebf-49d7198ee04b",
       "width": 0,
-      "x": 43,
-      "y": -7,
-      "zOrder": 12,
+      "x": 38,
+      "y": -27,
+      "zOrder": -4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -453,7 +453,7 @@
       "width": 783,
       "x": -5,
       "y": 246,
-      "zOrder": 18,
+      "zOrder": -5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -952,6 +952,23 @@
       "x": 750,
       "y": 345,
       "zOrder": 46,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 155,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Lectern",
+      "persistentUuid": "36884d6d-0a32-4bd3-a323-4fa2802a4b63",
+      "width": 159,
+      "x": 83,
+      "y": 149,
+      "zOrder": -3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2418,6 +2435,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Lectern",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\lectern.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 180,
+                        "y": 0
+                      },
+                      {
+                        "x": 180,
+                        "y": 175
+                      },
+                      {
+                        "x": 0,
+                        "y": 175
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2500,6 +2577,9 @@
       },
       {
         "objectName": "NothingCollider"
+      },
+      {
+        "objectName": "Lectern"
       }
     ]
   },
