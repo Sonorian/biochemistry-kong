@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2061051112535084,
+    "zoomFactor": 0.29683998128829725,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -660,7 +660,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 103,
+      "height": 78,
       "keepRatio": true,
       "layer": "",
       "name": "QuizCollider",
@@ -816,8 +816,8 @@
       "layer": "",
       "name": "NothingCollider",
       "persistentUuid": "4985e0a2-595f-4ad9-a142-21af1bd21e8c",
-      "width": 677,
-      "x": 405,
+      "width": 568,
+      "x": 514,
       "y": 297,
       "zOrder": 38,
       "numberProperties": [],
@@ -828,7 +828,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 115,
+      "height": 61,
       "keepRatio": true,
       "layer": "",
       "name": "VictoryCollider",
@@ -850,9 +850,42 @@
       "name": "Barrel",
       "persistentUuid": "13bb8799-06c3-47e4-9ced-dce4e6ad5bdf",
       "width": 0,
-      "x": 645,
-      "y": 1729,
+      "x": 919,
+      "y": 1641,
       "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BarrelSpawner",
+      "persistentUuid": "d27662c0-ef19-43a6-b14e-016406b1befc",
+      "width": 0,
+      "x": 894,
+      "y": 131,
+      "zOrder": 42,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 180,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BarrelDeleter",
+      "persistentUuid": "2abb3584-a8eb-4f40-901d-2faa558062ab",
+      "width": 39,
+      "x": -23,
+      "y": 1676,
+      "zOrder": 43,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -888,6 +921,7 @@
           "JumpButton": "A"
         },
         {
+          "maxSpeed": 350,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "gravity": 1500,
@@ -901,7 +935,6 @@
           "deceleration": 1500,
           "jumpSustainTime": 0.3,
           "maxFallingSpeed": 800,
-          "maxSpeed": 400,
           "slopeMaxAngle": 60,
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
@@ -2187,6 +2220,102 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BarrelSpawner",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ObjectSpawner",
+          "type": "ObjectSpawner::ObjectSpawner",
+          "SpawnPeriod": 8,
+          "OffsetX": 0,
+          "OffsetY": 0,
+          "JustSpawnedAnObject": false,
+          "MaxQuantityReached": false,
+          "MaxQuantity": 0,
+          "SpawnerCapacity": 0,
+          "UnlimitedCapacity": true,
+          "RandomPosition": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BarrelDeleter",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2215,6 +2344,12 @@
       },
       {
         "objectName": "Barrel"
+      },
+      {
+        "objectName": "BarrelSpawner"
+      },
+      {
+        "objectName": "BarrelDeleter"
       },
       {
         "objectName": "Boss"
@@ -2765,45 +2900,72 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Barrel",
-            "Platformer_Character",
-            "",
-            "",
-            "yes"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Platformer_Character",
-            "hit",
-            "True",
-            "True"
-          ]
-        }
-      ]
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
-      "name": "Barrel-Ladder",
+      "name": "Barrels",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Barrel",
+                "BarrelDeleter",
+                "",
+                "",
+                "yes"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Barrel",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Barrel",
+                "Platformer_Character",
+                "",
+                "",
+                "yes"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                "True"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2888,6 +3050,23 @@
               "parameters": [
                 "Platform_Passthrough",
                 "\"barrelFall\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+              },
+              "parameters": [
+                "BarrelSpawner",
+                "ObjectSpawner",
+                "Barrel",
+                ""
               ]
             }
           ]
@@ -3068,6 +3247,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Laser",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3504,6 +3684,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Quiz",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4169,6 +4350,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Nothing",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4592,6 +4774,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Victory",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4809,6 +4992,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "ObjectSpawner",
+      "type": "ObjectSpawner::ObjectSpawner"
     },
     {
       "name": "Opacity",
