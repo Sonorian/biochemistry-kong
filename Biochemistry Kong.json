@@ -430,13 +430,68 @@
         "name": "assets\\lectern.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/LindsayHinck.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LindsayHinck.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Thimann1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Thimann1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BarrelCellBio.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/BarrelCellBio.png\",\"extension\":\".png\"}",
+        "name": "assets\\BarrelCellBio.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "BackgroundColor",
+      "texture": "assets\\NewTiledSprite.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 64,
+      "name": "Background",
+      "texture": "assets\\Background.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 64,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Background"
+      },
+      {
+        "objectName": "BackgroundColor"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [],
@@ -452,6 +507,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/intro"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/cellbio"
     }
   ],
   "externalEvents": [],

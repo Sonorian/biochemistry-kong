@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.30684952343835115,
+    "zoomFactor": 0.31719659065365635,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1004,9 +1004,9 @@
           "JumpButton": "A"
         },
         {
-          "maxSpeed": 350,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "maxSpeed": 350,
           "gravity": 1500,
           "jumpSpeed": 717,
           "ladderClimbingSpeed": 100,
@@ -1114,19 +1114,8 @@
     {
       "assetStoreId": "",
       "height": 64,
-      "name": "Background",
-      "texture": "assets\\Background.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 64,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "height": 64,
       "name": "Platform_Passthrough",
-      "texture": "assets\\KresgeAcad.png",
+      "texture": "assets\\Thimann1.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 64,
       "variables": [],
@@ -1168,7 +1157,7 @@
       "assetStoreId": "",
       "height": 64,
       "name": "Platform_Ground",
-      "texture": "assets\\KresgeAcad.png",
+      "texture": "assets\\Thimann1.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 64,
       "variables": [],
@@ -1376,77 +1365,6 @@
                       {
                         "x": 0,
                         "y": 250
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "BackgroundColor",
-      "texture": "assets\\NewTiledSprite.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite2",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\LadderBad.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 100,
-                        "y": 0
-                      },
-                      {
-                        "x": 100,
-                        "y": 100
-                      },
-                      {
-                        "x": 0,
-                        "y": 100
                       }
                     ]
                   ]
@@ -2504,12 +2422,6 @@
         "objectName": "Platformer_Character"
       },
       {
-        "objectName": "BackgroundColor"
-      },
-      {
-        "objectName": "NewSprite2"
-      },
-      {
         "objectName": "Platform_Passthrough"
       },
       {
@@ -2517,9 +2429,6 @@
       },
       {
         "objectName": "Platform_Ground"
-      },
-      {
-        "objectName": "Background"
       },
       {
         "objectName": "Barrel"

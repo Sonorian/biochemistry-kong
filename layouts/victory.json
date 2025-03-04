@@ -28,23 +28,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1949,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Background",
-      "persistentUuid": "2ed97d58-6df3-4095-836b-289d47f766a1",
-      "width": 1097,
-      "x": -7,
-      "y": -5,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 369,
       "keepRatio": true,
       "layer": "",
@@ -57,20 +40,26 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1971,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BackgroundColor",
+      "persistentUuid": "5ff5361e-4f75-4d0e-a836-6ffcf27629a0",
+      "width": 1101,
+      "x": -14,
+      "y": -21,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "Background",
-      "texture": "NewTiledSprite",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
     {
       "assetStoreId": "",
       "bold": false,
@@ -117,9 +106,6 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "objectName": "Background"
-      },
       {
         "objectName": "VictoryText"
       }
