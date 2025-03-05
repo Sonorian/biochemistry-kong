@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.37687720367508853,
+    "zoomFactor": 0.6622955665506407,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -574,8 +574,8 @@
       "name": "Platformer_Character",
       "persistentUuid": "334acfc5-d358-4b37-9e53-6efd383695c3",
       "width": 0,
-      "x": 56,
-      "y": 1716,
+      "x": 118,
+      "y": 741,
       "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
@@ -837,6 +837,56 @@
       "x": 1,
       "y": 1525,
       "zOrder": 49,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 43,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FlCollider",
+      "persistentUuid": "d6b399b3-6897-4ff0-afdb-92f483c01f5d",
+      "width": 824,
+      "x": 259,
+      "y": 636,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Flower",
+      "persistentUuid": "bcc2297a-fb19-41c1-9dd3-98ad1c67ec52",
+      "width": 0,
+      "x": 519,
+      "y": -830,
+      "zOrder": 51,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "VictoryCollider",
+      "persistentUuid": "6bbaa538-1ff4-4bbb-8d2b-581f95b0f530",
+      "width": 561,
+      "x": 227,
+      "y": 87,
+      "zOrder": 52,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1482,6 +1532,21 @@
           "name": "Ubiquitination",
           "type": "string",
           "value": "Don't get poly-ubiquitinated if you don't want to be degraded!"
+        },
+        {
+          "name": "FlowerIntro",
+          "type": "string",
+          "value": "What does this AAA ATPase remind you of?"
+        },
+        {
+          "name": "FlowerPayoff",
+          "type": "string",
+          "value": "That's right, it looks like a flower!"
+        },
+        {
+          "name": "Victory",
+          "type": "string",
+          "value": "idk yet"
         }
       ],
       "effects": [],
@@ -2014,7 +2079,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Ubiquitin",
       "type": "Sprite",
@@ -2050,20 +2115,16 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 15
-                      },
-                      {
                         "x": 64,
-                        "y": 15
+                        "y": 36
                       },
                       {
-                        "x": 64,
-                        "y": 51
+                        "x": 4.5,
+                        "y": 46
                       },
                       {
-                        "x": 0,
-                        "y": 51
+                        "x": 8,
+                        "y": 18
                       }
                     ]
                   ]
@@ -2078,6 +2139,266 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "UbCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "shot",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Flower",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "assets\\flowerRed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\flower.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 500,
+                    "y": 500
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 809
+                      },
+                      {
+                        "x": 528.5,
+                        "y": 934.5
+                      },
+                      {
+                        "x": 440,
+                        "y": 994
+                      },
+                      {
+                        "x": 173.5,
+                        "y": 871
+                      }
+                    ],
+                    [
+                      {
+                        "x": 657,
+                        "y": 875.5
+                      },
+                      {
+                        "x": 893.5,
+                        "y": 710
+                      },
+                      {
+                        "x": 910,
+                        "y": 807.5
+                      },
+                      {
+                        "x": 657,
+                        "y": 983.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 839,
+                        "y": 260.5
+                      },
+                      {
+                        "x": 939.5,
+                        "y": 302
+                      },
+                      {
+                        "x": 972,
+                        "y": 608
+                      },
+                      {
+                        "x": 876,
+                        "y": 578.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 35,
+                        "y": 379
+                      },
+                      {
+                        "x": 122,
+                        "y": 410
+                      },
+                      {
+                        "x": 147,
+                        "y": 713
+                      },
+                      {
+                        "x": 60,
+                        "y": 673
+                      }
+                    ],
+                    [
+                      {
+                        "x": 559.5,
+                        "y": 21
+                      },
+                      {
+                        "x": 840.5,
+                        "y": 139.5
+                      },
+                      {
+                        "x": 763.5,
+                        "y": 209
+                      },
+                      {
+                        "x": 472.5,
+                        "y": 78.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 108.5,
+                        "y": 176
+                      },
+                      {
+                        "x": 354,
+                        "y": 3.5
+                      },
+                      {
+                        "x": 366,
+                        "y": 99.5
+                      },
+                      {
+                        "x": 111.5,
+                        "y": 284
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "VictoryCollider",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2172,6 +2493,15 @@
       },
       {
         "objectName": "UbCollider"
+      },
+      {
+        "objectName": "Flower"
+      },
+      {
+        "objectName": "FlCollider"
+      },
+      {
+        "objectName": "VictoryCollider"
       }
     ]
   },
@@ -2523,6 +2853,14 @@
               "parameters": [
                 "AVGuyAttack3"
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Ubiquitin"
+              ]
             }
           ]
         }
@@ -2540,6 +2878,17 @@
             "\"introTimer\"",
             ">=",
             "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "UbCollider",
+            "triggered",
+            "=",
+            ""
           ]
         },
         {
@@ -2950,6 +3299,332 @@
                 "Platformer_Character",
                 "=",
                 "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Ubiquitin",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "Ubiquitin",
+                "Platformer_Character.CenterX()",
+                "Platformer_Character.CenterY()",
+                "45",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "UbCollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "UbCollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubtimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.Ubiquitination"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubshow\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "UbCollider",
+                "triggered",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubshow\"",
+                ">=",
+                ".1"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubtimer\"",
+                "<=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubshow\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "",
+                    "Ubiquitin"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Ubiquitin",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubtimer\"",
+                ">=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "Ubiquitin",
+                "Platformer_Character.CenterX()",
+                "Platformer_Character.CenterY()",
+                "50",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubtimer\"",
+                "<=",
+                "5.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Ubiquitin",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "UbCollider",
+                "\"ubtimer\"",
+                ">=",
+                "5.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "UbCollider",
+                "done",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "Ubiquitin"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Ubiquitin"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "UbCollider",
+                "done",
+                "True",
+                ""
               ]
             }
           ]
@@ -3379,7 +4054,259 @@
       "name": "Flower",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "FlCollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "FlCollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "FlCollider",
+                "\"fltimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.FlowerIntro"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "FlCollider",
+                "triggered",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Flower",
+                "0",
+                "125",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "FlCollider",
+                "\"fltimer\"",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Rotate"
+              },
+              "parameters": [
+                "Flower",
+                "10",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "Flower",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Platformer_Character",
+                    "hit",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "FlCollider",
+                "\"fltimer\"",
+                ">=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.FlowerPayoff"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "FlCollider",
+                "\"fltimer\"",
+                ">=",
+                "60"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "FlCollider",
+                "done",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "Flower"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Flower"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "FlCollider",
+                "done",
+                "True",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "parameters": []
     },
     {
@@ -3387,24 +4314,65 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Ubiquitin",
+      "name": "Victory",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "VictoryCollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "FlCollider",
+                "\"fltimer\"",
+                ">=",
+                "20"
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
-                "value": "RotateTowardPosition"
+                "value": "Montre"
               },
               "parameters": [
-                "Ubiquitin",
-                "Platformer_Character.CenterX()",
-                "Platformer_Character.CenterY()",
-                "15",
+                "SpeechBubble",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.Victory"
               ]
             }
           ]

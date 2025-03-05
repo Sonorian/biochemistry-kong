@@ -470,6 +470,22 @@
         "name": "assets\\ub.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/flowerRed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\flowerRed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/flower.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/flower.png\",\"extension\":\".png\"}",
+        "name": "assets\\flower.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
