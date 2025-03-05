@@ -18,11 +18,17 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3526904934771236,
+    "zoomFactor": 0.37687720367508853,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "RNG",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -181,14 +187,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1679,
+      "height": 1928,
       "keepRatio": true,
       "layer": "",
       "name": "Platform_Ground",
       "persistentUuid": "0cef945a-9ab9-4cb4-828d-daa6d93274b6",
       "width": 64,
       "x": 1083,
-      "y": 165,
+      "y": 10,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -291,22 +297,6 @@
       "x": 95,
       "y": 416,
       "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Background",
-      "name": "Platformer_Character",
-      "persistentUuid": "0987f58c-153a-40d9-b41a-f5eeed59ed7d",
-      "width": 0,
-      "x": 97,
-      "y": 1709,
-      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -521,6 +511,332 @@
       "x": 563,
       "y": 253,
       "zOrder": -9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SpeechBubble",
+      "persistentUuid": "7c16b8a1-52cc-442b-b612-11bc433b2f48",
+      "width": 0,
+      "x": 202,
+      "y": 21,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 62,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Dialogue",
+      "persistentUuid": "8ca4ede6-c00a-42e2-a43d-9a2f48020cc4",
+      "width": 580,
+      "x": 231,
+      "y": 75,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 325,
+      "customSize": true,
+      "depth": 1.7241379310344829,
+      "height": 500,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AVGuyAttack",
+      "persistentUuid": "e42c8581-31a2-4bc2-8de2-911c337740cf",
+      "width": 500,
+      "x": -71,
+      "y": -120,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platformer_Character",
+      "persistentUuid": "334acfc5-d358-4b37-9e53-6efd383695c3",
+      "width": 0,
+      "x": 56,
+      "y": 1716,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AVCollider",
+      "persistentUuid": "0c41e519-087d-48f8-9174-e49007409b71",
+      "width": 796,
+      "x": -4,
+      "y": 1163,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderCollider",
+      "persistentUuid": "e3501e63-f019-4a74-be30-d34d3e920170",
+      "width": 0,
+      "x": 43,
+      "y": 834,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderCollider",
+      "persistentUuid": "f6ab1232-e787-4923-a117-d5325d38c439",
+      "width": 0,
+      "x": 623,
+      "y": 1223,
+      "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderCollider",
+      "persistentUuid": "55a911cf-c393-46ef-a93d-f96f66356272",
+      "width": 0,
+      "x": 176,
+      "y": 1568,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 28,
+      "customSize": true,
+      "depth": 1,
+      "height": 527,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AVGuyAttack2",
+      "persistentUuid": "579c83d7-2030-4f38-96ee-a2f10afea38d",
+      "width": 527,
+      "x": 1161,
+      "y": -166,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 530,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AVGuyAttack3",
+      "persistentUuid": "7e1e0fb2-2905-421b-849b-623018741dbb",
+      "width": 530,
+      "x": 549,
+      "y": -152,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "c29e3e31-5f35-40da-9de5-09a0cbc726e2",
+      "width": 0,
+      "x": 159,
+      "y": 289,
+      "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "118412cb-11d6-4a25-b0fb-4ddb22ab0bdd",
+      "width": 0,
+      "x": 267,
+      "y": 244,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "cf5aa168-3192-4cce-88b2-52f7882e4733",
+      "width": 0,
+      "x": 372,
+      "y": 232,
+      "zOrder": 42,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "5a37ff80-74ab-42cb-9d66-77b5d91ba2f8",
+      "width": 0,
+      "x": 490,
+      "y": 224,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "fbca2d74-0d40-4a34-a3ff-0c627ec3a280",
+      "width": 0,
+      "x": 617,
+      "y": 222,
+      "zOrder": 44,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "928bebb7-0f7e-49fb-9972-a1beba1434b7",
+      "width": 0,
+      "x": 747,
+      "y": 249,
+      "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "4bd275d7-3724-4e64-9711-1f809027f34e",
+      "width": 0,
+      "x": 862,
+      "y": 282,
+      "zOrder": 46,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "3ef3b01b-168c-4b3b-9b00-e494cc5a4511",
+      "width": 0,
+      "x": 963,
+      "y": 321,
+      "zOrder": 47,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ubiquitin",
+      "persistentUuid": "2b2aeee9-d8e0-4f86-b6dc-394cb3f99344",
+      "width": 0,
+      "x": 53,
+      "y": 335,
+      "zOrder": 48,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "UbCollider",
+      "persistentUuid": "a5641b8a-93e5-4b27-b2fd-c3a768288030",
+      "width": 711,
+      "x": 1,
+      "y": 1525,
+      "zOrder": 49,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1082,6 +1398,722 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "SpeechBubble",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\speechbubble.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 19
+                      },
+                      {
+                        "x": 128,
+                        "y": 19
+                      },
+                      {
+                        "x": 128,
+                        "y": 121
+                      },
+                      {
+                        "x": 0,
+                        "y": 121
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Dialogue",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "Intro",
+          "type": "string",
+          "value": "It's time for Cell Biology."
+        },
+        {
+          "name": "AV",
+          "type": "string",
+          "value": "Uhg, what's happening with the sound... AV guy!"
+        },
+        {
+          "name": "Ubiquitination",
+          "type": "string",
+          "value": "Don't get poly-ubiquitinated if you don't want to be degraded!"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "now he's saying few",
+      "font": "assets\\KOMTXTK_.ttf",
+      "textAlignment": "center",
+      "characterSize": 25,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "now he's saying few",
+        "font": "assets\\KOMTXTK_.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 25,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "AVGuyAttack",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\avguy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 500,
+                    "y": 500
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 500,
+                    "y": 500
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 443,
+                        "y": 973
+                      },
+                      {
+                        "x": 443,
+                        "y": 993
+                      },
+                      {
+                        "x": 335.5,
+                        "y": 971.5
+                      },
+                      {
+                        "x": 203.5,
+                        "y": 903
+                      }
+                    ],
+                    [
+                      {
+                        "x": 589,
+                        "y": 971.5
+                      },
+                      {
+                        "x": 845,
+                        "y": 873.5
+                      },
+                      {
+                        "x": 675,
+                        "y": 969
+                      },
+                      {
+                        "x": 589,
+                        "y": 988.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 970.5,
+                        "y": 667.5
+                      },
+                      {
+                        "x": 844,
+                        "y": 873.5
+                      },
+                      {
+                        "x": 768,
+                        "y": 898
+                      }
+                    ],
+                    [
+                      {
+                        "x": 998,
+                        "y": 469
+                      },
+                      {
+                        "x": 974,
+                        "y": 667
+                      },
+                      {
+                        "x": 943.5,
+                        "y": 689.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 46,
+                        "y": 717.5
+                      },
+                      {
+                        "x": 285,
+                        "y": 926
+                      },
+                      {
+                        "x": 203.5,
+                        "y": 903.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 0,
+                        "y": 552.5
+                      },
+                      {
+                        "x": 90.5,
+                        "y": 757.5
+                      },
+                      {
+                        "x": 43,
+                        "y": 717.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AVCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "LadderCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "blank",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "LadderCollider",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "AVGuyAttack2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\avguy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 500,
+                    "y": 500
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 500,
+                    "y": 500
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 443,
+                        "y": 973
+                      },
+                      {
+                        "x": 443,
+                        "y": 993
+                      },
+                      {
+                        "x": 335.5,
+                        "y": 971.5
+                      },
+                      {
+                        "x": 203.5,
+                        "y": 903
+                      }
+                    ],
+                    [
+                      {
+                        "x": 589,
+                        "y": 971.5
+                      },
+                      {
+                        "x": 845,
+                        "y": 873.5
+                      },
+                      {
+                        "x": 675,
+                        "y": 969
+                      },
+                      {
+                        "x": 589,
+                        "y": 988.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 970.5,
+                        "y": 667.5
+                      },
+                      {
+                        "x": 844,
+                        "y": 873.5
+                      },
+                      {
+                        "x": 768,
+                        "y": 898
+                      }
+                    ],
+                    [
+                      {
+                        "x": 998,
+                        "y": 469
+                      },
+                      {
+                        "x": 974,
+                        "y": 667
+                      },
+                      {
+                        "x": 943.5,
+                        "y": 689.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 46,
+                        "y": 717.5
+                      },
+                      {
+                        "x": 285,
+                        "y": 926
+                      },
+                      {
+                        "x": 203.5,
+                        "y": 903.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 0,
+                        "y": 552.5
+                      },
+                      {
+                        "x": 90.5,
+                        "y": 757.5
+                      },
+                      {
+                        "x": 43,
+                        "y": 717.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "AVGuyAttack3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\avguy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 500,
+                    "y": 500
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 500,
+                    "y": 500
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 443,
+                        "y": 973
+                      },
+                      {
+                        "x": 443,
+                        "y": 993
+                      },
+                      {
+                        "x": 335.5,
+                        "y": 971.5
+                      },
+                      {
+                        "x": 203.5,
+                        "y": 903
+                      }
+                    ],
+                    [
+                      {
+                        "x": 589,
+                        "y": 971.5
+                      },
+                      {
+                        "x": 845,
+                        "y": 873.5
+                      },
+                      {
+                        "x": 675,
+                        "y": 969
+                      },
+                      {
+                        "x": 589,
+                        "y": 988.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 970.5,
+                        "y": 667.5
+                      },
+                      {
+                        "x": 844,
+                        "y": 873.5
+                      },
+                      {
+                        "x": 768,
+                        "y": 898
+                      }
+                    ],
+                    [
+                      {
+                        "x": 998,
+                        "y": 469
+                      },
+                      {
+                        "x": 974,
+                        "y": 667
+                      },
+                      {
+                        "x": 943.5,
+                        "y": 689.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 46,
+                        "y": 717.5
+                      },
+                      {
+                        "x": 285,
+                        "y": 926
+                      },
+                      {
+                        "x": 203.5,
+                        "y": 903.5
+                      }
+                    ],
+                    [
+                      {
+                        "x": 0,
+                        "y": 552.5
+                      },
+                      {
+                        "x": 90.5,
+                        "y": 757.5
+                      },
+                      {
+                        "x": 43,
+                        "y": 717.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Ubiquitin",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "assets\\ub",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ub.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 15
+                      },
+                      {
+                        "x": 64,
+                        "y": 15
+                      },
+                      {
+                        "x": 64,
+                        "y": 51
+                      },
+                      {
+                        "x": 0,
+                        "y": 51
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "UbCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1103,6 +2135,9 @@
         "objectName": "Barrel"
       },
       {
+        "objectName": "LadderCollider"
+      },
+      {
         "objectName": "BarrelSpawner"
       },
       {
@@ -1113,6 +2148,30 @@
       },
       {
         "objectName": "Lectern"
+      },
+      {
+        "objectName": "SpeechBubble"
+      },
+      {
+        "objectName": "Dialogue"
+      },
+      {
+        "objectName": "AVGuyAttack"
+      },
+      {
+        "objectName": "AVGuyAttack2"
+      },
+      {
+        "objectName": "AVGuyAttack3"
+      },
+      {
+        "objectName": "AVCollider"
+      },
+      {
+        "objectName": "Ubiquitin"
+      },
+      {
+        "objectName": "UbCollider"
       }
     ]
   },
@@ -1373,9 +2432,985 @@
       "parameters": []
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Init"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "\"iframes\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Dialogue",
+            "Text",
+            "=",
+            "Dialogue.Intro"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "SpeechBubble",
+            "\"introTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+          },
+          "parameters": [
+            "Platformer_Character",
+            "Animation"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "AVGuyAttack"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "AVGuyAttack2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "AVGuyAttack3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "SpeechBubble",
+            "\"introTimer\"",
+            ">=",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "SpeechBubble"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Dialogue"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Barrels",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+              },
+              "parameters": [
+                "BarrelSpawner",
+                "ObjectSpawner",
+                "Barrel",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Barrel",
+                "BarrelDeleter",
+                "",
+                "",
+                "yes"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Barrel",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Barrel",
+                "Platformer_Character",
+                "",
+                "",
+                "yes"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RNG",
+                "=",
+                "Random(100)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "LadderCollider",
+                "Barrel",
+                "",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "LadderCollider",
+                "Platform_Passthrough",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "RNG",
+                "<",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "Physics2",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "\"barrelFall\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "\"barrelFall\"",
+                ">=",
+                ".5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Platform_Passthrough",
+                "Physics2",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Hit Handling",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\"",
+                ">",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\hit-2.wav",
+                "no",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\"",
+                "<",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateDownKey"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"iframes\"",
+                ">=",
+                ".9"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "control",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "AV Guy",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "AVCollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "AVCollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "AVCollider",
+                "\"avtimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.AV"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "AVCollider",
+                "triggered",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "AVCollider",
+                "\"avtimer\"",
+                "<",
+                "7"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "AVCollider",
+                    "\"avtimer\"",
+                    ">=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "AVGuyAttack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AVGuyAttack",
+                    "Scale",
+                    "*",
+                    "1.01"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "AVCollider",
+                    "\"avtimer\"",
+                    ">=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "AVGuyAttack2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AVGuyAttack2",
+                    "Scale",
+                    "*",
+                    "1.01"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "AVCollider",
+                    "\"avtimer\"",
+                    ">=",
+                    "2.5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "AVGuyAttack3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AVGuyAttack3",
+                    "Scale",
+                    "*",
+                    "1.01"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "AVCollider",
+                    "\"avtimer\"",
+                    ">=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "AVGuyAttack",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "hit",
+                        "True",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "AVGuyAttack2",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "hit",
+                        "True",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "AVGuyAttack3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "hit",
+                        "True",
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "AVCollider",
+                "\"avtimer\"",
+                ">=",
+                "7"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "AVCollider",
+                "done",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "AVGuyAttack"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "AVGuyAttack2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "AVGuyAttack3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "AVCollider",
+                "done",
+                "True",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Flower",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Ubiquitin",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "Ubiquitin",
+                "Platformer_Character.CenterX()",
+                "Platformer_Character.CenterY()",
+                "15",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -1539,6 +3574,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
