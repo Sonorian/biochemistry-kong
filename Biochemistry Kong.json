@@ -454,6 +454,14 @@
         "name": "assets\\BarrelCellBio.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/avguy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\avguy.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -511,6 +519,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/cellbio"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/leveltemplate"
     }
   ],
   "externalEvents": [],
