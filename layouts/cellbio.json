@@ -1541,7 +1541,7 @@
         {
           "name": "FlowerPayoff",
           "type": "string",
-          "value": "That's right, it looks like a flower!"
+          "value": "It looks like a flower!"
         },
         {
           "name": "Victory",
