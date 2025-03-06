@@ -486,6 +486,86 @@
         "name": "assets\\flower.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/boeger.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\boeger.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BarrelEuk.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/BarrelEuk.png\",\"extension\":\".png\"}",
+        "name": "assets\\BarrelEuk.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/yeast1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\yeast1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/yeast2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\yeast2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/yeast3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\yeast3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/yeast4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\yeast4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/yeast5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\yeast5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/yeast6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\yeast6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/question.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\question.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/atp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\atp.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
