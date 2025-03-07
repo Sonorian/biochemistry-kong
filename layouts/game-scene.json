@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2432786796131056,
+    "zoomFactor": 0.3389492098929386,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1780,7 +1780,7 @@
       "effects": [],
       "behaviors": [],
       "string": "now he's saying few",
-      "font": "assets\\KOMTXTK_.ttf",
+      "font": "assets\\font\\KOMTXTK_.ttf",
       "textAlignment": "center",
       "characterSize": 25,
       "color": {
@@ -1803,7 +1803,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "now he's saying few",
-        "font": "assets\\KOMTXTK_.ttf",
+        "font": "assets\\font\\KOMTXTK_.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
         "characterSize": 25,
@@ -1910,7 +1910,7 @@
       "effects": [],
       "behaviors": [],
       "string": "Rosalind Franklin",
-      "font": "assets\\KOMTXTKB.ttf",
+      "font": "assets\\font\\KOMTXTKB.ttf",
       "textAlignment": "center",
       "characterSize": 100,
       "color": {
@@ -1933,7 +1933,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "Rosalind Franklin",
-        "font": "assets\\KOMTXTKB.ttf",
+        "font": "assets\\font\\KOMTXTKB.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
         "characterSize": 100,
@@ -1952,7 +1952,7 @@
       "effects": [],
       "behaviors": [],
       "string": "James Watson",
-      "font": "assets\\KOMTXTKB.ttf",
+      "font": "assets\\font\\KOMTXTKB.ttf",
       "textAlignment": "center",
       "characterSize": 100,
       "color": {
@@ -1975,7 +1975,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "James Watson",
-        "font": "assets\\KOMTXTKB.ttf",
+        "font": "assets\\font\\KOMTXTKB.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
         "characterSize": 100,
@@ -2010,7 +2010,7 @@
       "effects": [],
       "behaviors": [],
       "string": "3",
-      "font": "assets\\KOMTXTKB.ttf",
+      "font": "assets\\font\\KOMTXTKB.ttf",
       "textAlignment": "left",
       "characterSize": 150,
       "color": {
@@ -2033,7 +2033,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "3",
-        "font": "assets\\KOMTXTKB.ttf",
+        "font": "assets\\font\\KOMTXTKB.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 150,
@@ -2562,7 +2562,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2723,7 +2722,7 @@
                       },
                       "parameters": [
                         "",
-                        "assets\\jump-4.wav",
+                        "assets\\audio\\jump-4.wav",
                         "",
                         "",
                         ""
@@ -3031,7 +3030,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Hit Handling",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3084,7 +3082,7 @@
               },
               "parameters": [
                 "",
-                "assets\\hit-2.wav",
+                "assets\\audio\\hit-2.wav",
                 "no",
                 "",
                 ""
@@ -3753,7 +3751,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\laser-2.wav",
+                    "assets\\audio\\laser-2.wav",
                     "yes",
                     "",
                     ""
@@ -4289,7 +4287,7 @@
               },
               "parameters": [
                 "",
-                "assets\\laser-2.wav",
+                "assets\\audio\\laser-2.wav",
                 "yes",
                 "",
                 ""
@@ -4422,7 +4420,7 @@
               },
               "parameters": [
                 "",
-                "assets\\laser-2.wav"
+                "assets\\audio\\laser-2.wav"
               ]
             },
             {
@@ -4515,7 +4513,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Nothing",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4793,7 +4790,7 @@
               },
               "parameters": [
                 "",
-                "assets\\laser-2.wav",
+                "assets\\audio\\laser-2.wav",
                 "yes",
                 "",
                 ""
@@ -4926,7 +4923,7 @@
               },
               "parameters": [
                 "",
-                "assets\\laser-2.wav"
+                "assets\\audio\\laser-2.wav"
               ]
             }
           ]
@@ -4939,7 +4936,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Victory",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

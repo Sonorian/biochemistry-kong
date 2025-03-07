@@ -566,6 +566,50 @@
         "name": "assets\\atp.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/font/KOMTXTK_.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\font\\KOMTXTK_.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/font/KOMTXTKB.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\font\\KOMTXTKB.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/laser-2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\laser-2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/hit-2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\hit-2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/jump-4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\jump-4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

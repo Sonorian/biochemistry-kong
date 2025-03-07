@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6622955665506407,
+    "zoomFactor": 0.3768772036750888,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1538,7 +1538,7 @@
       "effects": [],
       "behaviors": [],
       "string": "now he's saying few",
-      "font": "assets\\KOMTXTK_.ttf",
+      "font": "assets\\font\\KOMTXTK_.ttf",
       "textAlignment": "center",
       "characterSize": 25,
       "color": {
@@ -1561,7 +1561,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "now he's saying few",
-        "font": "assets\\KOMTXTK_.ttf",
+        "font": "assets\\font\\KOMTXTK_.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
         "characterSize": 25,
@@ -2657,7 +2657,7 @@
                       },
                       "parameters": [
                         "",
-                        "assets\\jump-4.wav",
+                        "assets\\audio\\jump-4.wav",
                         "",
                         "",
                         ""
@@ -3130,7 +3130,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Hit Handling",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3183,7 +3182,7 @@
               },
               "parameters": [
                 "",
-                "assets\\hit-2.wav",
+                "assets\\audio\\hit-2.wav",
                 "no",
                 "",
                 ""
