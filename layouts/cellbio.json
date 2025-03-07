@@ -1241,21 +1241,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "ObjectSpawner",
-          "type": "ObjectSpawner::ObjectSpawner",
-          "SpawnPeriod": 8,
-          "OffsetX": 0,
-          "OffsetY": 0,
-          "JustSpawnedAnObject": false,
-          "MaxQuantityReached": false,
-          "MaxQuantity": 0,
-          "SpawnerCapacity": 0,
-          "UnlimitedCapacity": true,
-          "RandomPosition": false
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "",
@@ -2823,6 +2809,15 @@
             "Platformer_Character",
             "Animation"
           ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "BarrelSpawner",
+            "\"spawnTimer\""
+          ]
         }
       ],
       "events": [
@@ -2922,24 +2917,45 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Barrels",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "conditions": [
             {
               "type": {
-                "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+                "value": "CompareObjectTimer"
               },
               "parameters": [
                 "BarrelSpawner",
-                "ObjectSpawner",
+                "\"spawnTimer\"",
+                ">=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
                 "Barrel",
+                "BarrelSpawner.X()",
+                "BarrelSpawner.Y()",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "BarrelSpawner",
+                "\"spawnTimer\""
               ]
             }
           ]
@@ -4505,10 +4521,6 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
-    },
-    {
-      "name": "ObjectSpawner",
-      "type": "ObjectSpawner::ObjectSpawner"
     },
     {
       "name": "Opacity",

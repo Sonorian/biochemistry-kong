@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.44193570087511636,
+    "zoomFactor": 0.2432786796131056,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2266,21 +2266,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "ObjectSpawner",
-          "type": "ObjectSpawner::ObjectSpawner",
-          "SpawnPeriod": 8,
-          "OffsetX": 0,
-          "OffsetY": 0,
-          "JustSpawnedAnObject": false,
-          "MaxQuantityReached": false,
-          "MaxQuantity": 0,
-          "SpawnerCapacity": 0,
-          "UnlimitedCapacity": true,
-          "RandomPosition": false
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "",
@@ -2832,24 +2818,45 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Barrels",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "conditions": [
             {
               "type": {
-                "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+                "value": "CompareObjectTimer"
               },
               "parameters": [
                 "BarrelSpawner",
-                "ObjectSpawner",
+                "\"spawnTimer\"",
+                ">=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
                 "Barrel",
+                "BarrelSpawner.X()",
+                "BarrelSpawner.Y()",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "BarrelSpawner",
+                "\"spawnTimer\""
               ]
             }
           ]
@@ -3277,6 +3284,15 @@
           "parameters": [
             "Platformer_Character",
             "Animation"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "BarrelSpawner",
+            "\"spawnTimer\""
           ]
         }
       ],
@@ -3834,7 +3850,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Quiz",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5142,10 +5157,6 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
-    },
-    {
-      "name": "ObjectSpawner",
-      "type": "ObjectSpawner::ObjectSpawner"
     },
     {
       "name": "Opacity",
