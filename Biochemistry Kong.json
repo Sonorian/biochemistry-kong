@@ -92,22 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/StartingPlayer.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/StartingPlayer.png\",\"extension\":\".png\"}",
-        "name": "assets\\StartingPlayer.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingGround.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingGround.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Background.png",
         "kind": "image",
         "metadata": "",
@@ -116,75 +100,11 @@
         "userAdded": false
       },
       {
-        "file": "assets/StartingCoin.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingCoin.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Top arrow button.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Top arrow button.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/e3943e1b23ceb90f00fc5e7c0481c5147b983fdc5397fb3690e102e53ce72d4f_Top arrow button.png",
-          "name": "Top arrow button.png"
-        }
-      },
-      {
-        "file": "assets/Flat dark joystick border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat dark joystick border.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/1db606cabd7372d1494ba5934bc25bcdd72f5a213c4a27509be57c3f4d5aecca_Flat dark joystick border.png",
-          "name": "Flat dark joystick border.png"
-        }
-      },
-      {
-        "file": "assets/Flat dark joystick thumb.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat dark joystick thumb.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/10167ade22c4a6b48324e6c1d1bd6dc74179d7bed0775890903f418b4a05c8a1_Flat dark joystick thumb.png",
-          "name": "Flat dark joystick thumb.png"
-        }
-      },
-      {
-        "file": "assets/PickupCoin.wav",
-        "kind": "audio",
-        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Jump 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.05,\\\"sustainPunch\\\":20,\\\"decay\\\":0.3,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":400,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":15,\\\"frequencyJump1Amount\\\":25,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":85,\\\"squareDutySweep\\\":35,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"PickupCoin\"},\"localFilePath\":\"assets/PickupCoin.wav\"}",
-        "name": "PickupCoin",
-        "preloadAsMusic": false,
-        "preloadAsSound": true,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/NewSprite.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite",
         "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/PickupCoin.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\PickupCoin.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
         "userAdded": false
       },
       {
@@ -228,74 +148,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewTiledSprite.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\NewTiledSprite.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/LadderCollider.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "LadderCollider",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/beam.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "beam",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/beam2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "beam2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/beam3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "beam3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/beam4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam4.png\"}",
-        "name": "beam4",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/beam5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam5.png\"}",
-        "name": "beam5",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/beam6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/beam6.png\"}",
-        "name": "beam6",
         "smoothed": true,
         "userAdded": false
       },
@@ -348,13 +204,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/KOMTXTK_.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "assets\\KOMTXTK_.ttf",
-        "userAdded": false
-      },
-      {
         "file": "assets/Divider.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
@@ -385,34 +234,6 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/jump-4.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\jump-4.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/hit-2.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\hit-2.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/beam7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\beam7.png",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -468,14 +289,6 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/ub.png\",\"extension\":\".png\"}",
         "name": "assets\\ub.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/flowerRed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\flowerRed.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -610,6 +423,70 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/stone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\stone.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/proteinlk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\proteinlk.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bound.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bound.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/proteinif.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\proteinif.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ligand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ligand.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/explosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\explosion.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_explosion.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\explosion",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewTiledSprite.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -671,6 +548,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/leveltemplate"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/biochemistry"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
