@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3526904934771243,
+    "zoomFactor": 0.34118560234734663,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -425,8 +425,8 @@
       "name": "Platformer_Character",
       "persistentUuid": "986f427b-9d5c-40fd-b05b-0609cab6a9bf",
       "width": 0,
-      "x": 114,
-      "y": 1739,
+      "x": 748,
+      "y": 589,
       "zOrder": 50,
       "numberProperties": [],
       "stringProperties": [],
@@ -608,8 +608,8 @@
       "name": "ProteinIF",
       "persistentUuid": "b6b67ef6-0509-4f3e-b794-28bed411b614",
       "width": 0,
-      "x": -265,
-      "y": 987,
+      "x": -120,
+      "y": 1132,
       "zOrder": 57,
       "numberProperties": [],
       "stringProperties": [],
@@ -624,7 +624,7 @@
       "name": "Ligand",
       "persistentUuid": "32ad4472-592b-49c7-8a4b-5305df6ff1a3",
       "width": 0,
-      "x": 1001,
+      "x": 1005,
       "y": 979,
       "zOrder": 58,
       "numberProperties": [],
@@ -643,6 +643,411 @@
       "x": 1419,
       "y": 1079,
       "zOrder": 59,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TACollider",
+      "persistentUuid": "82954bd6-c411-4965-963b-496a3323e103",
+      "width": 843,
+      "x": 238,
+      "y": 1009,
+      "zOrder": 60,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 218,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TA",
+      "persistentUuid": "0499e26f-068d-40e8-9114-d960f92fda00",
+      "width": 218,
+      "x": 8,
+      "y": 713,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 226,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "ExclamationMark",
+      "persistentUuid": "671da9e3-a3cb-4cbd-bfe1-f827a8b3fbfa",
+      "width": 226,
+      "x": 4,
+      "y": 603,
+      "zOrder": 61,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "dc4d43f2-dc8e-4690-b07c-77c4d8c4e7c8",
+      "width": 0,
+      "x": -371,
+      "y": -74,
+      "zOrder": 62,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 35,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "FinalCollider",
+      "persistentUuid": "08f1cae6-d320-4a04-9ce2-4fa29fbf0ce5",
+      "width": 640,
+      "x": -6,
+      "y": 493,
+      "zOrder": 63,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "ba150724-339e-4325-acdd-2b3da85a58e0",
+      "width": 0,
+      "x": -50,
+      "y": -151,
+      "zOrder": 64,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "b2fec5df-ff93-467a-a33c-46c4fd084d08",
+      "width": 0,
+      "x": -261,
+      "y": -319,
+      "zOrder": 65,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "6608ee54-219c-462b-8db6-64970aadf047",
+      "width": 0,
+      "x": 150,
+      "y": -321,
+      "zOrder": 66,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "847c35e4-37ef-4364-8a8b-58e266092ce4",
+      "width": 0,
+      "x": -242,
+      "y": 203,
+      "zOrder": 67,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "3aacb342-8ad2-4c34-b5b4-ddaf0e03892b",
+      "width": 0,
+      "x": -535,
+      "y": 352,
+      "zOrder": 68,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "b4e80a58-324b-497b-bbe5-0df8f2d2a4e5",
+      "width": 0,
+      "x": -652,
+      "y": -73,
+      "zOrder": 69,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "726306da-891f-4463-bede-8c0166aeddb5",
+      "width": 0,
+      "x": -53,
+      "y": -351,
+      "zOrder": 70,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "2d520379-6938-4d0b-9db4-39603a754234",
+      "width": 0,
+      "x": -491,
+      "y": -351,
+      "zOrder": 71,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "403c0cf9-8351-420c-b24a-6c4e30b4f59b",
+      "width": 0,
+      "x": -254,
+      "y": -585,
+      "zOrder": 72,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "d4d095f9-23d0-4d99-8734-0d51bad36962",
+      "width": 0,
+      "x": 496,
+      "y": -448,
+      "zOrder": 73,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "c3a8d1dd-75e3-4046-b052-269cffc9f2ba",
+      "width": 0,
+      "x": 389,
+      "y": -184,
+      "zOrder": 74,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "1b3067da-3547-4f00-a510-b9dca992a372",
+      "width": 0,
+      "x": 84,
+      "y": -689,
+      "zOrder": 75,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "520704be-6ace-45b3-916d-d8edc3b50f12",
+      "width": 0,
+      "x": 221,
+      "y": -508,
+      "zOrder": 76,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "23cfa2f3-6476-46c8-a34f-5e2d67842c43",
+      "width": 0,
+      "x": -16,
+      "y": -502,
+      "zOrder": 77,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "16c87efb-d8cf-43d2-87ca-dd9c664ee537",
+      "width": 0,
+      "x": -740,
+      "y": -380,
+      "zOrder": 78,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "52438e9a-85ef-4100-b2fc-45e1d119fc48",
+      "width": 0,
+      "x": -484,
+      "y": -537,
+      "zOrder": 79,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "2b7348b9-2e9d-4575-8d54-9796376e5f07",
+      "width": 0,
+      "x": 754,
+      "y": -193,
+      "zOrder": 80,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "473a04ef-aadf-49c8-ac5d-bff07a9e6309",
+      "width": 0,
+      "x": -411,
+      "y": 52,
+      "zOrder": 81,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "Saturation",
+      "persistentUuid": "f7556296-98e2-42df-aba9-cfb5aba5f616",
+      "width": 0,
+      "x": 483,
+      "y": 289,
+      "zOrder": 82,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 40,
+      "keepRatio": true,
+      "layer": "Overlay",
+      "name": "VictoryCollider",
+      "persistentUuid": "f6cbdd7c-468b-4cc8-a253-0d30662dc46f",
+      "width": 489,
+      "x": 285,
+      "y": 134,
+      "zOrder": 83,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -665,6 +1070,11 @@
           "name": "control",
           "type": "boolean",
           "value": true
+        },
+        {
+          "name": "shield",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -700,7 +1110,7 @@
       ],
       "animations": [
         {
-          "name": "quinn",
+          "name": "hit",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -746,6 +1156,90 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\PlayerCharacter2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "shield",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerCharacter3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerCharacter1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -933,7 +1427,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "assets\\BarrelBiochem.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1250,7 +1744,27 @@
         {
           "name": "Midterm",
           "type": "string",
-          "value": "All of your classes will have exams. Make sure you aren't caught off guard for this one!"
+          "value": "All of your classes will have exams. Make sure you aren't caught off guard for this midterm!"
+        },
+        {
+          "name": "TA",
+          "type": "string",
+          "value": "If you're having trouble with the material, go to your TA's office hours."
+        },
+        {
+          "name": "TACollected",
+          "type": "string",
+          "value": "Going over the concepts will protect you from one hit. "
+        },
+        {
+          "name": "Final",
+          "type": "string",
+          "value": "It's time for your final exam! You won't be able to pass the class until you clear the final. "
+        },
+        {
+          "name": "Victory",
+          "type": "string",
+          "value": "Great job! Good luck in your senior year!"
         }
       ],
       "effects": [],
@@ -1355,6 +1869,11 @@
       "variables": [
         {
           "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "done",
           "type": "boolean",
           "value": false
         }
@@ -1565,8 +2084,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 150,
+                    "y": 150
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1629,8 +2148,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 150,
+                    "y": 150
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1671,6 +2190,50 @@
                       {
                         "x": 56,
                         "y": 233
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "explode",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\assets_explosion.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 150,
+                    "y": 150
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 141.5,
+                        "y": 122.5
+                      },
+                      {
+                        "x": 151.5,
+                        "y": 167.5
+                      },
+                      {
+                        "x": 122.5,
+                        "y": 159.5
                       }
                     ]
                   ]
@@ -1853,6 +2416,343 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TACollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TA",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\doorbad.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 64,
+                        "y": 43
+                      },
+                      {
+                        "x": 226,
+                        "y": 43
+                      },
+                      {
+                        "x": 226,
+                        "y": 263
+                      },
+                      {
+                        "x": 64,
+                        "y": 263
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ExclamationMark",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ExclamationMark.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 8
+                      },
+                      {
+                        "x": 37,
+                        "y": 8
+                      },
+                      {
+                        "x": 37,
+                        "y": 60
+                      },
+                      {
+                        "x": 26,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Saturation",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\saturation-fire.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 22,
+                        "y": 45.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 6.5
+                      },
+                      {
+                        "x": 88.5,
+                        "y": 14
+                      },
+                      {
+                        "x": 95,
+                        "y": 42.5
+                      },
+                      {
+                        "x": 49,
+                        "y": 94
+                      },
+                      {
+                        "x": 19,
+                        "y": 88.5
+                      },
+                      {
+                        "x": 7.5,
+                        "y": 69.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FinalCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggered",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "VictoryCollider",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\LadderCollider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1911,6 +2811,24 @@
       },
       {
         "objectName": "RIGHT"
+      },
+      {
+        "objectName": "TACollider"
+      },
+      {
+        "objectName": "TA"
+      },
+      {
+        "objectName": "ExclamationMark"
+      },
+      {
+        "objectName": "Saturation"
+      },
+      {
+        "objectName": "FinalCollider"
+      },
+      {
+        "objectName": "VictoryCollider"
       }
     ]
   },
@@ -2192,7 +3110,7 @@
                 "BarrelSpawner",
                 "\"spawnTimer\"",
                 ">=",
-                "8"
+                "10"
               ]
             }
           ],
@@ -2390,7 +3308,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Hit Handling",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2418,6 +3335,17 @@
                 "\"iframes\"",
                 ">",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "False",
+                ""
               ]
             },
             {
@@ -2578,6 +3506,119 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"shieldImmunity\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"shieldImmunity\"",
+                ">=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation",
+                "=",
+                "\"hit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "False",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -2647,7 +3688,26 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ExclamationMark"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Saturation",
+                "=",
+                "RandomInRange(0,360)"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2712,6 +3772,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Midterm",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2939,6 +4000,17 @@
                 "=",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Explosion",
+                "ProteinLK.CenterX()",
+                "ProteinLK.CenterY()",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -3085,6 +4157,17 @@
                     "<=",
                     "1.5"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Explosion",
+                    "ProteinLK.CenterX()",
+                    "ProteinLK.CenterY()",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -3108,6 +4191,44 @@
                     "Scale",
                     "*",
                     ".9"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "ProteinLK",
+                    "\"bind\"",
+                    ">",
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Explosion",
+                    "ProteinLK.CenterX()",
+                    "ProteinLK.CenterY()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Explosion",
+                    ""
                   ]
                 }
               ]
@@ -3234,17 +4355,6 @@
             },
             {
               "type": {
-                "value": "PickNearest"
-              },
-              "parameters": [
-                "Ligand",
-                "RIGHT.CenterX()",
-                "ProteinIF.CenterY()",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "inverted": true,
                 "value": "CollisionNP"
               },
@@ -3253,6 +4363,17 @@
                 "Ligand",
                 "",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Ligand",
+                "RIGHT.CenterX()",
+                "ProteinIF.CenterY()",
                 ""
               ]
             }
@@ -3299,17 +4420,6 @@
             },
             {
               "type": {
-                "value": "PickNearest"
-              },
-              "parameters": [
-                "Ligand",
-                "ProteinIF.CenterX()",
-                "ProteinIF.CenterY()",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
@@ -3323,23 +4433,6 @@
           "actions": [
             {
               "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "ProteinIF"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Ligand",
-                "="
-              ]
-            },
-            {
-              "type": {
                 "value": "Arreter"
               },
               "parameters": [
@@ -3348,37 +4441,13 @@
             },
             {
               "type": {
-                "value": "Create"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "",
-                "Explosion",
-                "0",
-                "0",
-                "\"Overlay\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetSize"
-              },
-              "parameters": [
-                "Explosion",
-                "Resizable",
-                "500",
-                "500"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenter"
-              },
-              "parameters": [
-                "Explosion",
+                "ProteinIF",
+                "Animation",
                 "=",
-                "(ProteinLK.CenterX()+Ligand.CenterX())/2",
-                "=",
-                "(ProteinLK.CenterY()+Ligand.CenterY())/2"
+                "\"explode\""
               ]
             },
             {
@@ -3400,11 +4469,40 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "ProteinIF",
+                "=",
+                "(ProteinIF.CenterX()+Ligand.CenterX())/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Ligand",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "ProteinIF",
+                "Resizable",
+                "500",
+                "500"
+              ]
             }
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3426,7 +4524,7 @@
                 "ProteinIF",
                 "\"bind\"",
                 "<=",
-                "1.5"
+                ".75"
               ]
             }
           ],
@@ -3436,20 +4534,39 @@
                 "value": "ScalableCapability::ScalableBehavior::SetValue"
               },
               "parameters": [
-                "Explosion",
+                "ProteinIF",
                 "Scale",
                 "*",
-                ".9"
+                ".8"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "SetCenterX"
+                "value": "CompareObjectTimer"
               },
               "parameters": [
                 "ProteinIF",
-                "=",
-                "Explosion.CenterX()"
+                "\"bind\"",
+                ">",
+                ".75"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "ProteinIF",
+                "Resizable",
+                "300",
+                "300"
               ]
             },
             {
@@ -3465,22 +4582,675 @@
             },
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "ProteinIF",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "AddForceXY"
               },
               "parameters": [
                 "ProteinIF",
                 "0",
-                "10",
+                "15",
                 "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "ProteinLK",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "ProteinIF",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Ligand",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "ProteinIF",
+                "\"bind\"",
+                ">",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "MidtermCollider",
+                "done",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "TACollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "TA",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "TACollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "TACollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.TA"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ExclamationMark",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "TACollider",
+                "triggered",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "TA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ExclamationMark"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.TACollected"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "TACollider",
+                "\"collectTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "TACollider",
+                "\"collectTimer\"",
+                ">=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "TACollider",
+                "done",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "FinalCollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Shield",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "TA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation",
+                "=",
+                "\"shield\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "TA",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Final",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "FinalCollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "FinalCollider",
+                "triggered",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.Final"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "FinalCollider",
+                "\"finalTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "FinalCollider",
+                "triggered",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "Saturation",
+                "45",
+                "60",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Saturation",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "FinalCollider",
+                "\"finalTimer\"",
+                ">=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "FinalCollider",
+                "done",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SpeechBubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialogue"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "FinalCollider",
+                "done",
+                "True",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Victory",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "VictoryCollider",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "FinalCollider",
+                "done",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SpeechBubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Dialogue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dialogue",
+                "Text",
+                "=",
+                "Dialogue.Victory"
               ]
             }
           ]

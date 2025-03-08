@@ -487,6 +487,46 @@
         "name": "assets\\NewTiledSprite.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/assets_explosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_explosion.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/doorbad.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\doorbad.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayerCharacter3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PlayerCharacter3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/saturation-fire.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\saturation-fire.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BarrelBiochem.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/BarrelBiochem.png\",\"extension\":\".png\"}",
+        "name": "assets\\BarrelBiochem.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
