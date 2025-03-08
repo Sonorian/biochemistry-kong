@@ -593,6 +593,26 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/audio/jump-8.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\jump-8.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/coin-3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\coin-3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

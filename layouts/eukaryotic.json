@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4913877545329373,
+    "zoomFactor": 0.3895856273827303,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -360,8 +360,8 @@
       "name": "Platformer_Character",
       "persistentUuid": "0f9d58e8-36e9-453e-93ce-f65ce0c9f9b3",
       "width": 0,
-      "x": 24,
-      "y": 1121,
+      "x": 70,
+      "y": 1749,
       "zOrder": 46,
       "numberProperties": [],
       "stringProperties": [],
@@ -625,8 +625,8 @@
       "name": "YeastQuiz",
       "persistentUuid": "f8bb13b2-1942-4c7d-9581-276d66bf2e59",
       "width": 229,
-      "x": 111,
-      "y": 557,
+      "x": 96,
+      "y": 555,
       "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
@@ -642,8 +642,8 @@
       "name": "YeastQuiz",
       "persistentUuid": "f1e7bec3-40e8-4490-878d-b45794fa354a",
       "width": 229,
-      "x": 345,
-      "y": 551,
+      "x": 351,
+      "y": 541,
       "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
@@ -659,8 +659,8 @@
       "name": "YeastQuiz",
       "persistentUuid": "b200bb04-511e-4a94-a78f-c08ed62e0430",
       "width": 229,
-      "x": 259,
-      "y": 790,
+      "x": 294,
+      "y": 771,
       "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
@@ -676,8 +676,8 @@
       "name": "YeastQuiz",
       "persistentUuid": "01cd4580-7c72-43ec-b74b-c18e3e13f80c",
       "width": 229,
-      "x": 123,
-      "y": 973,
+      "x": 110,
+      "y": 938,
       "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
@@ -693,8 +693,8 @@
       "name": "YeastQuiz",
       "persistentUuid": "d8a29fbb-cf96-4d5d-b4e8-52d277cb50d3",
       "width": 229,
-      "x": 381,
-      "y": 1030,
+      "x": 363,
+      "y": 1026,
       "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
@@ -778,8 +778,8 @@
       "name": "YeastQuiz",
       "persistentUuid": "3042f006-9d86-4fbb-a2cc-adc1c263ecce",
       "width": 229,
-      "x": 143,
-      "y": 1676,
+      "x": 139,
+      "y": 1688,
       "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
@@ -967,6 +967,57 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 174,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TA",
+      "persistentUuid": "ddcfc0a7-80c1-4743-b680-089d1e38dc33",
+      "width": 174,
+      "x": 943,
+      "y": 1602,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 174,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TA",
+      "persistentUuid": "246475b8-5653-40ee-91ad-77f7f83f3bd8",
+      "width": 174,
+      "x": 934,
+      "y": 535,
+      "zOrder": -11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LawCollider",
+      "persistentUuid": "97aefdce-1502-4b3e-9bbc-f53679018dd1",
+      "width": 640,
+      "x": 31,
+      "y": 461,
+      "zOrder": 72,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -986,6 +1037,11 @@
           "name": "control",
           "type": "boolean",
           "value": true
+        },
+        {
+          "name": "shield",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -1591,7 +1647,7 @@
         {
           "name": "Victory",
           "type": "string",
-          "value": "Good job. I hope you better understand the process of science."
+          "value": "Well done. I hope you better understand the process of science."
         }
       ],
       "effects": [],
@@ -3041,6 +3097,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TA",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\doorbad.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 64,
+                        "y": 43
+                      },
+                      {
+                        "x": 226,
+                        "y": 43
+                      },
+                      {
+                        "x": 226,
+                        "y": 263
+                      },
+                      {
+                        "x": 64,
+                        "y": 263
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3117,6 +3233,9 @@
       },
       {
         "objectName": "ATP"
+      },
+      {
+        "objectName": "TA"
       }
     ]
   },
@@ -3594,6 +3713,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Hit Handling",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3621,6 +3741,17 @@
                 "\"iframes\"",
                 ">",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "False",
+                ""
               ]
             },
             {
@@ -3778,6 +3909,194 @@
                 "Platformer_Character",
                 "=",
                 "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"shieldImmunity\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "hit",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\bonk-6.wav",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"shieldImmunity\"",
+                ">=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation",
+                "=",
+                "\"hit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "False",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Shield",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "TA",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "shield",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation",
+                "=",
+                "\"shield\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "TA",
+                ""
               ]
             }
           ]
@@ -4468,6 +4787,18 @@
               "parameters": [
                 "Question"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\jump-8.wav",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -4765,6 +5096,42 @@
             },
             {
               "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\jump-8.wav",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "ProofCollider",
+                "\"kineticTimer\"",
+                ">",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
                 "value": "CompareObjectTimer"
               },
               "parameters": [
@@ -4895,6 +5262,17 @@
                   },
                   "parameters": [
                     "QuizCollider",
+                    "triggered",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LawCollider",
                     "triggered",
                     "=",
                     ""
@@ -5093,6 +5471,18 @@
                 "LawCollider",
                 "done",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\coin-3.wav",
+                "",
+                "",
                 ""
               ]
             }
