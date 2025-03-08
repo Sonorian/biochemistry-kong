@@ -613,6 +613,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/audio/win-8.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\win-8.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

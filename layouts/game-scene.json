@@ -1048,7 +1048,7 @@
       ],
       "animations": [
         {
-          "name": "quinn",
+          "name": "hit",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1094,6 +1094,90 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\PlayerCharacter2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "shield",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerCharacter3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 2
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\PlayerCharacter1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3499,6 +3583,18 @@
                 "TA",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\coin-3.wav",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         }
@@ -3695,7 +3791,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Laser",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4069,15 +4164,18 @@
                 "=",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "UnloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\laser-2.wav"
+              ]
+            },
             {
               "type": {
                 "value": "Cache"
@@ -4100,15 +4198,6 @@
               },
               "parameters": [
                 "Dialogue"
-              ]
-            },
-            {
-              "type": {
-                "value": "UnloadSound"
-              },
-              "parameters": [
-                "",
-                "assets\\laser-2.wav"
               ]
             },
             {
@@ -5324,6 +5413,18 @@
                     "VictoryCollider",
                     "\"victoryTimer\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\audio\\win-8.wav",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ]
             }
@@ -5351,7 +5452,7 @@
               },
               "parameters": [
                 "",
-                "\"Victory\"",
+                "\"Eukaryotic\"",
                 ""
               ]
             }
