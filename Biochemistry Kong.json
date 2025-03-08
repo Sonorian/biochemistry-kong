@@ -527,6 +527,22 @@
         "name": "assets\\BarrelBiochem.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/eroy-reveles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\eroy-reveles.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/mediatheater.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mediatheater.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -588,6 +604,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/leveltemplate"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/gen-chem"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
