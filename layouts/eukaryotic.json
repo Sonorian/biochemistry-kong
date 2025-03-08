@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3895856273827303,
+    "zoomFactor": 0.4163025217733345,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -988,23 +988,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "LawCollider",
-      "persistentUuid": "97aefdce-1502-4b3e-9bbc-f53679018dd1",
-      "width": 640,
-      "x": 31,
-      "y": 461,
-      "zOrder": 72,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -1501,7 +1484,7 @@
         {
           "name": "Law",
           "type": "string",
-          "value": "Aha - your existence is violating the second law of thermodynamics. You must [idk get atp]"
+          "value": "Aha - your existence is violating the second law of thermodynamics. You must find a work reservoir."
         },
         {
           "name": "Victory",
@@ -5025,7 +5008,19 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "ProofCollider",
+                    "triggered",
+                    ">=",
+                    ""
+                  ]
+                }
+              ],
               "actions": [
                 {
                   "type": {
@@ -5506,7 +5501,7 @@
                 "LawCollider",
                 "\"lawTimer\"",
                 ">=",
-                "0"
+                "1"
               ]
             },
             {
