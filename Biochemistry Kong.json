@@ -623,6 +623,14 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/diploma.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\diploma.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
