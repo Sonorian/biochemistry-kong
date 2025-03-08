@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.21446078431372687,
+    "zoomFactor": 0.26167741169921627,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -453,14 +453,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 282,
+      "height": 307,
       "keepRatio": true,
       "layer": "",
       "name": "Platform_ladder",
       "persistentUuid": "958489a8-34df-4705-ad1e-cdea5b95fb78",
       "width": 64,
-      "x": 1011,
-      "y": 1487,
+      "x": 811,
+      "y": 1503,
       "zOrder": -7,
       "numberProperties": [],
       "stringProperties": [],
@@ -1048,6 +1048,54 @@
       "x": 285,
       "y": 134,
       "zOrder": 83,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderCollider",
+      "persistentUuid": "0d501e8a-a457-44f9-b60d-ba8e0f0762cd",
+      "width": 0,
+      "x": 552,
+      "y": 536,
+      "zOrder": 84,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderCollider",
+      "persistentUuid": "3c79706a-a476-4349-bdb2-1f93a84bdcc1",
+      "width": 0,
+      "x": 249,
+      "y": 1052,
+      "zOrder": 85,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderCollider",
+      "persistentUuid": "7d4a24ef-ad32-40cd-8865-c64caafaf6f7",
+      "width": 0,
+      "x": 718,
+      "y": 1246,
+      "zOrder": 86,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3562,6 +3610,18 @@
                 "False",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\bonk-6.wav",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -4064,6 +4124,18 @@
             },
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\explode-1.wav",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ResetObjectTimer"
               },
               "parameters": [
@@ -4448,6 +4520,18 @@
                 "Animation",
                 "=",
                 "\"explode\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\explode-1.wav",
+                "",
+                "",
+                ""
               ]
             },
             {
@@ -5095,6 +5179,18 @@
                 "60",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\ufo.wav",
+                "yes",
+                "25",
+                ""
+              ]
             }
           ]
         },
@@ -5180,6 +5276,15 @@
                 "done",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "UnloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\ufo.wav"
               ]
             }
           ]

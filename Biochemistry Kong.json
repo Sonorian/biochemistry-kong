@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Intro",
+  "firstLayout": "Gen Chem",
   "gdVersion": {
     "build": 224,
     "major": 5,
@@ -542,6 +542,56 @@
         "metadata": "",
         "name": "assets\\mediatheater.png",
         "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/explode-1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\explode-1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/bonk-6.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\bonk-6.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/ufo.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\ufo.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/gun-4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\gun-4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/robot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\robot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ],

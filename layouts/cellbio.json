@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3768772036750888,
+    "zoomFactor": 0.3088741216342664,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -878,7 +878,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 70,
+      "height": 81,
       "keepRatio": true,
       "layer": "",
       "name": "VictoryCollider",
@@ -3529,6 +3529,33 @@
                 "1"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\audio\\gun-4.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -3652,7 +3679,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "AV Guy",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3789,6 +3815,123 @@
                     "1.01"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "AVGuyAttack",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "hit",
+                        "True",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "AVGuyAttack3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "hit",
+                        "True",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "AVGuyAttack2",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Platformer_Character",
+                        "hit",
+                        "True",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\audio\\robot.wav",
+                        "yes",
+                        "75",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -3882,99 +4025,7 @@
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "AVGuyAttack",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "hit",
-                        "True",
-                        "True"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "AVGuyAttack2",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "hit",
-                        "True",
-                        "True"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "AVGuyAttack3",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "hit",
-                        "True",
-                        "True"
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "actions": []
             }
           ]
         },
@@ -4054,6 +4105,15 @@
                 "done",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "UnloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\audio\\robot.wav"
               ]
             }
           ]
@@ -4232,6 +4292,17 @@
                 "\"fltimer\"",
                 ">=",
                 "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "FlCollider",
+                "done",
+                "=",
+                ""
               ]
             }
           ],
