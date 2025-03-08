@@ -1429,7 +1429,7 @@
         {
           "name": "Victory",
           "type": "string",
-          "value": "I'm surprised you made it this far"
+          "value": "I'm surprised you made it this far."
         }
       ],
       "effects": [],

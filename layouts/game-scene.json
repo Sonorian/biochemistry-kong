@@ -1880,7 +1880,7 @@
         {
           "name": "Victory",
           "type": "string",
-          "value": "Congratulations!"
+          "value": "Congratulations! You made it."
         }
       ],
       "effects": [],
