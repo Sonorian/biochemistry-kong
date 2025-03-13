@@ -1,7 +1,7 @@
 {
   "firstLayout": "Gen Chem",
   "gdVersion": {
-    "build": 224,
+    "build": 226,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -11,7 +11,7 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
-    "orientation": "portrait",
+    "orientation": "default",
     "packageName": "com.example.gamename",
     "pixelsRounding": false,
     "projectUuid": "ff1cb66d-25d9-4d34-9477-ea56bdb3f338",
@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-platformer",
     "version": "1.0.0",
-    "name": "Biochemistry Jump",
+    "name": "134 Units",
     "description": "",
     "author": "",
     "windowWidth": 1080,
@@ -77,9 +77,13 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [],
+    "authorIds": [
+      "oMUNHsGNmuZ4PYP4SMxBbE81WHg1"
+    ],
     "authorUsernames": [],
-    "categories": [],
+    "categories": [
+      "platformer"
+    ],
     "playableDevices": [],
     "extensionProperties": [],
     "platforms": [
@@ -630,6 +634,40 @@
         "metadata": "",
         "name": "assets\\diploma.png",
         "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BarrelGenchem.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/BarrelGenchem.png\",\"extension\":\".png\"}",
+        "name": "assets\\BarrelGenchem.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/speechbubble-glow.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/speechbubble-glow.png\",\"extension\":\".png\"}",
+        "name": "assets\\speechbubble-glow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/speechbubble-large.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/speechbubble-large.png\",\"extension\":\".png\"}",
+        "name": "assets\\speechbubble-large.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/blip-2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\blip-2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ],
