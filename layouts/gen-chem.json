@@ -3045,6 +3045,18 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Barrel",
+                "BarrelSpawner.X()",
+                "BarrelSpawner.Y()",
+                ""
+              ]
             }
           ]
         },
