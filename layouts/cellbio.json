@@ -2791,6 +2791,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3609,7 +3610,7 @@
                 "Platformer_Character",
                 "\"iframes\"",
                 "<",
-                "1"
+                ".5"
               ]
             }
           ],

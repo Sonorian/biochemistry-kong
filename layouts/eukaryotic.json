@@ -3856,7 +3856,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Hit Handling",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3961,7 +3960,7 @@
                 "Platformer_Character",
                 "\"iframes\"",
                 "<",
-                "1"
+                ".5"
               ]
             }
           ],
