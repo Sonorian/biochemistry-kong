@@ -5,7 +5,7 @@
   "name": "Game Scene",
   "r": 255,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 255,
   "uiSettings": {

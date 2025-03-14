@@ -56,22 +56,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NewText",
-      "persistentUuid": "03b0b781-91f7-4f0c-841d-6f4b29a67ea0",
-      "width": 0,
-      "x": 894,
-      "y": 136,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [

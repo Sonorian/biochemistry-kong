@@ -685,6 +685,16 @@
         "name": "assets\\logo.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/audio/Frantic Remedy.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\Frantic Remedy.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

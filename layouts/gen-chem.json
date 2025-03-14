@@ -2672,7 +2672,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Init",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2751,6 +2750,18 @@
                   },
                   "parameters": [
                     "ExclamationMark"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\audio\\Frantic Remedy.mp3",
+                    "yes",
+                    "15",
+                    ""
                   ]
                 }
               ]
