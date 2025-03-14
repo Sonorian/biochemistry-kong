@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.44485159988866707,
+    "zoomFactor": 0.6406912462476511,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -322,7 +322,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 177,
+      "height": 167,
       "keepRatio": true,
       "layer": "",
       "name": "Platform_ladder",
@@ -455,7 +455,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 127,
+      "height": 117,
       "keepRatio": true,
       "layer": "",
       "name": "Platform_ladder",
@@ -678,11 +678,11 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 14,
+                        "x": 0,
                         "y": 0
                       },
                       {
-                        "x": 52,
+                        "x": 64,
                         "y": 0
                       },
                       {
@@ -714,11 +714,11 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 14,
+                        "x": 0,
                         "y": 0
                       },
                       {
-                        "x": 52,
+                        "x": 64,
                         "y": 0
                       },
                       {

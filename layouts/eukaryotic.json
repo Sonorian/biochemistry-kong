@@ -1001,6 +1001,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderHat",
+      "persistentUuid": "223380b7-7ea5-45f9-afd6-574941d67ee4",
+      "width": 0,
+      "x": -115,
+      "y": 1989,
+      "zOrder": 74,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -3088,11 +3104,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -3124,11 +3140,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -3172,11 +3188,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -3208,11 +3224,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,

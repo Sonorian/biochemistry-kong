@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.35269049347712406,
+    "zoomFactor": 0.3411856023473464,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -917,9 +917,25 @@
       "name": "Platformer_Character",
       "persistentUuid": "c8f58de9-e753-4624-8610-cc60b5e38b1f",
       "width": 0,
-      "x": 594,
-      "y": 149,
+      "x": 58,
+      "y": 1755,
       "zOrder": 55,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderHat",
+      "persistentUuid": "e35474af-7338-4db9-ad98-1240e5726878",
+      "width": 0,
+      "x": -76,
+      "y": 1986,
+      "zOrder": 56,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2508,11 +2524,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -2544,11 +2560,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -2592,11 +2608,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -2628,11 +2644,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
