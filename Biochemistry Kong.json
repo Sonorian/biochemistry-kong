@@ -669,6 +669,14 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/ladder-collider.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ladder-collider.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7817486425451791,
+    "zoomFactor": 0.44485159988866707,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -583,6 +583,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LadderHat",
+      "persistentUuid": "002f0f9a-3a7e-494f-8173-7c57c156b2e5",
+      "width": 0,
+      "x": 83,
+      "y": 1730,
+      "zOrder": 58,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -662,12 +678,12 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 2
+                        "x": 14,
+                        "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 2
+                        "x": 52,
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -698,12 +714,12 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 2
+                        "x": 14,
+                        "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 2
+                        "x": 52,
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -1586,6 +1602,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "LadderHat",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ladder-collider.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1593,6 +1669,9 @@
     "children": [
       {
         "objectName": "Platformer_Character"
+      },
+      {
+        "objectName": "LadderHat"
       },
       {
         "objectName": "Platform_Passthrough"
@@ -1650,10 +1729,37 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "LadderHat",
+                "=",
+                "Platformer_Character.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "LadderHat",
+                "=",
+                "Platformer_Character.Y()"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1708,43 +1814,35 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "Platformer_Character",
-                        "Platform_ladder",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateJumpKey"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "PlatformerObject"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Platformer_Character",
-                        "Platform_Passthrough",
-                        "",
-                        "",
-                        "yes"
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Platformer_Character",
+                            "Platform_Passthrough",
+                            "",
+                            "",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Platformer_Character",
+                            "Platform_ladder",
+                            "",
+                            "",
+                            "yes"
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1781,7 +1879,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "Platformer_Character",
+                        "LadderHat",
                         "Platform_Passthrough",
                         "",
                         "",
@@ -2187,6 +2285,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Hit Handling",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2688,11 +2787,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     },
     {
       "colorB": 228,
