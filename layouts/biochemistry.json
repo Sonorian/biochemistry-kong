@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4163025217733347,
+    "zoomFactor": 0.580015523990489,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -523,39 +523,6 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "SpeechBubble",
-      "persistentUuid": "b2135cdc-8c9d-4af9-85eb-32e621521f39",
-      "width": 0,
-      "x": 211,
-      "y": 31,
-      "zOrder": 52,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 63,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Dialogue",
-      "persistentUuid": "c96a5dce-4f93-4abf-9b4a-67a70af65d02",
-      "width": 579,
-      "x": 245,
-      "y": 83,
-      "zOrder": 53,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
       "name": "ProteinLK",
       "persistentUuid": "9ef4c724-796c-415c-bc16-47a959addd75",
       "width": 0,
@@ -1039,13 +1006,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 172,
+      "height": 174,
       "keepRatio": true,
       "layer": "Overlay",
       "name": "VictoryCollider",
       "persistentUuid": "f6cbdd7c-468b-4cc8-a253-0d30662dc46f",
-      "width": 489,
-      "x": 285,
+      "width": 658,
+      "x": 90,
       "y": 2,
       "zOrder": 83,
       "numberProperties": [],
@@ -1112,6 +1079,39 @@
       "x": 30,
       "y": 1988,
       "zOrder": 87,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SpeechBubble",
+      "persistentUuid": "31e4412e-42e3-4008-9f28-376caf8affa9",
+      "width": 0,
+      "x": 178,
+      "y": 4,
+      "zOrder": 88,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 69,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Dialogue",
+      "persistentUuid": "bb4d72ed-b462-479e-8f24-344f63cb0c91",
+      "width": 591,
+      "x": 236,
+      "y": 82,
+      "zOrder": 89,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1752,12 +1752,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\speechbubble.png",
+                  "image": "assets\\speechbubble-large.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1773,20 +1773,56 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 19
+                        "x": 36,
+                        "y": 25
                       },
                       {
-                        "x": 128,
-                        "y": 19
+                        "x": 665,
+                        "y": 25
                       },
                       {
-                        "x": 128,
-                        "y": 121
+                        "x": 665,
+                        "y": 150
                       },
                       {
-                        "x": 0,
-                        "y": 121
+                        "x": 36,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\speechbubble-glow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 36,
+                        "y": 25
+                      },
+                      {
+                        "x": 665,
+                        "y": 25
+                      },
+                      {
+                        "x": 665,
+                        "y": 150
+                      },
+                      {
+                        "x": 36,
+                        "y": 150
                       }
                     ]
                   ]
