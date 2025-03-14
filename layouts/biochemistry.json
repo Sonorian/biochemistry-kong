@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.23689563725446694,
+    "zoomFactor": 0.2890516203134934,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1006,7 +1006,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 174,
+      "height": 176,
       "keepRatio": true,
       "layer": "Overlay",
       "name": "VictoryCollider",
@@ -5552,7 +5552,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Final",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5652,7 +5651,7 @@
               "parameters": [
                 "Saturation",
                 "45",
-                "60",
+                "RandomInRange(55,65)",
                 "1"
               ]
             },
