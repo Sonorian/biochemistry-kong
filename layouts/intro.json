@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 107,
   "disableInputWhenNotFocused": true,
   "mangledName": "Intro",
   "name": "Intro",
-  "r": 209,
+  "r": 109,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 96,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -25,18 +25,17 @@
   "variables": [],
   "instances": [
     {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1971,
+      "angle": 5,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "NewTiledSprite",
-      "persistentUuid": "dccfda0f-2db5-42c3-9479-1ba34ff256ea",
-      "width": 1125,
-      "x": -26,
-      "y": -19,
-      "zOrder": 1,
+      "name": "Logo",
+      "persistentUuid": "b13f3e4f-956e-4c25-83df-d321d2eb1290",
+      "width": 0,
+      "x": 39,
+      "y": 36,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -45,32 +44,37 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 488,
+      "height": 398,
+      "keepRatio": true,
+      "layer": "",
+      "name": "msg",
+      "persistentUuid": "755ca373-f20d-416d-a36e-d194e2839f3f",
+      "width": 543,
+      "x": 245,
+      "y": 1034,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
       "name": "NewText",
-      "persistentUuid": "9908d03b-e57a-4976-a30d-636ccc845268",
-      "width": 1059,
-      "x": 6,
-      "y": 563,
-      "zOrder": 2,
+      "persistentUuid": "03b0b781-91f7-4f0c-841d-6f4b29a67ea0",
+      "width": 0,
+      "x": 894,
+      "y": 136,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "NewTiledSprite",
-      "texture": "NewTiledSprite",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
     {
       "assetStoreId": "",
       "bold": false,
@@ -82,9 +86,9 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Get to the top to\npass the class.\nWASD - move\nany key - continue",
+      "string": "1",
       "font": "assets\\KOMTXTKB.ttf",
-      "textAlignment": "center",
+      "textAlignment": "left",
       "characterSize": 125,
       "color": {
         "b": 0,
@@ -105,11 +109,148 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Get to the top to\npass the class.\nWASD - move\nany key - continue",
+        "text": "1",
         "font": "assets\\KOMTXTKB.ttf",
-        "textAlignment": "center",
+        "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 125,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Logo",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Speed",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "Duration",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "time",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 1,
+            "blur": 7,
+            "distance": 20,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "51;46;46"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\logo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 151
+                      },
+                      {
+                        "x": 994,
+                        "y": 151
+                      },
+                      {
+                        "x": 994,
+                        "y": 857
+                      },
+                      {
+                        "x": 1,
+                        "y": 857
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "msg",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Controls: WASD or arrow keys\n\nPress any key to start",
+      "font": "assets\\font\\KOMTXTK_.ttf",
+      "textAlignment": "center",
+      "characterSize": 100,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 20,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Controls: WASD or arrow keys\n\nPress any key to start",
+        "font": "assets\\font\\KOMTXTK_.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 100,
         "color": "0;0;0"
       }
     }
@@ -118,10 +259,13 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "NewTiledSprite"
+        "objectName": "NewText"
       },
       {
-        "objectName": "NewText"
+        "objectName": "Logo"
+      },
+      {
+        "objectName": "msg"
       }
     ]
   },
@@ -145,7 +289,78 @@
           },
           "parameters": [
             "",
-            "\"Game Scene\"",
+            "\"Gen Chem\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Logo",
+            "time",
+            "+",
+            "TimeDelta()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "mod(Logo.time/Logo.Duration,2)",
+            "<",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Rotate"
+          },
+          "parameters": [
+            "Logo",
+            "-Logo.Speed",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "mod(Logo.time/Logo.Duration,2)",
+            ">=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Rotate"
+          },
+          "parameters": [
+            "Logo",
+            "+Logo.Speed",
             ""
           ]
         }
@@ -200,8 +415,16 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
     },
     {
       "name": "Opacity",

@@ -677,6 +677,14 @@
         "name": "assets\\ladder-collider.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
