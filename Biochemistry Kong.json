@@ -144,14 +144,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewTiledSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewTiledSprite",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/LadderCollider.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -200,26 +192,11 @@
         "userAdded": false
       },
       {
-        "file": "assets/speechbubble.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\speechbubble.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Divider.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Divider",
         "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/KOMTXTKB.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "assets\\KOMTXTKB.ttf",
         "userAdded": false
       },
       {
@@ -469,26 +446,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/explosion.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\explosion.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/assets_explosion.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\explosion",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewTiledSprite.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\NewTiledSprite.png",
         "smoothed": true,
         "userAdded": false
       },
