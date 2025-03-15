@@ -664,6 +664,14 @@
         "name": "assets\\credits.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/psb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\psb.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
