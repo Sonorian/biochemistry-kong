@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 107,
   "disableInputWhenNotFocused": true,
   "mangledName": "Victory",
   "name": "Victory",
-  "r": 209,
+  "r": 109,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
-  "v": 209,
+  "v": 96,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -31,29 +31,12 @@
       "height": 369,
       "keepRatio": true,
       "layer": "",
-      "name": "VictoryText",
+      "name": "continue",
       "persistentUuid": "b01f4cc7-4ff6-454c-b302-1fe8fc48c1dc",
       "width": 903,
       "x": 83,
       "y": 642,
       "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1971,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BackgroundColor",
-      "persistentUuid": "5ff5361e-4f75-4d0e-a836-6ffcf27629a0",
-      "width": 1101,
-      "x": -14,
-      "y": -21,
-      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -73,6 +56,39 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 252,
+      "keepRatio": true,
+      "layer": "",
+      "name": "continue",
+      "persistentUuid": "ebf6b5cf-ee5c-4988-b6d5-63417eedafff",
+      "width": 890,
+      "x": 103,
+      "y": 1287,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "continue2",
+      "persistentUuid": "eb3bfe9c-19ea-4510-8f3d-0cb42d24c4bf",
+      "width": 0,
+      "x": 279,
+      "y": 1428,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -80,17 +96,17 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "VictoryText",
+      "name": "continue",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "You passed!",
-      "font": "assets\\KOMTXTKB.ttf",
+      "string": "any key to",
+      "font": "assets\\font\\KOMTXTK_.ttf",
       "textAlignment": "center",
-      "characterSize": 200,
+      "characterSize": 150,
       "color": {
         "b": 0,
         "g": 0,
@@ -110,11 +126,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "You passed!",
-        "font": "assets\\KOMTXTKB.ttf",
+        "text": "any key to",
+        "font": "assets\\font\\KOMTXTK_.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 200,
+        "characterSize": 150,
         "color": "0;0;0"
       }
     },
@@ -177,20 +193,189 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "continue2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "continue",
+      "font": "assets\\font\\KOMTXTK_.ttf",
+      "textAlignment": "center",
+      "characterSize": 150,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 20,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "continue",
+        "font": "assets\\font\\KOMTXTK_.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 150,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "VictoryText"
+        "objectName": "continue"
+      },
+      {
+        "objectName": "continue2"
       },
       {
         "objectName": "Diploma"
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "continue",
+            "=",
+            "540"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "continue2",
+            "=",
+            "540"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "continue"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "continue2"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"sc\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"sc\"",
+            ">=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "continue2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "continue",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnyKeyReleased"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Credits\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,

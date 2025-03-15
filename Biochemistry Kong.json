@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Gen Chem",
+  "firstLayout": "Intro",
   "gdVersion": {
     "build": 226,
     "major": 5,
@@ -695,6 +695,14 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/credits.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\credits.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -768,6 +776,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/eukaryotic"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits"
     }
   ],
   "externalEvents": [],
