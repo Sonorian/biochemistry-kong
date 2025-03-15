@@ -2565,7 +2565,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "TA",
       "type": "Sprite",
@@ -2583,7 +2583,7 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "assets\\doorbad.png",
                   "points": [],
                   "originPoint": {
@@ -2597,26 +2597,7 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 64,
-                        "y": 43
-                      },
-                      {
-                        "x": 226,
-                        "y": 43
-                      },
-                      {
-                        "x": 226,
-                        "y": 263
-                      },
-                      {
-                        "x": 64,
-                        "y": 263
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 }
               ]
             }
