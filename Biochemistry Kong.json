@@ -710,17 +710,6 @@
   "objects": [
     {
       "assetStoreId": "",
-      "height": 32,
-      "name": "BackgroundColor",
-      "texture": "assets\\NewTiledSprite.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
       "height": 64,
       "name": "Background",
       "texture": "assets\\Background.png",
@@ -736,9 +725,6 @@
     "children": [
       {
         "objectName": "Background"
-      },
-      {
-        "objectName": "BackgroundColor"
       }
     ]
   },

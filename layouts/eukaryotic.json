@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 42,
   "disableInputWhenNotFocused": true,
   "mangledName": "Eukaryotic",
   "name": "Eukaryotic",
-  "r": 209,
+  "r": 38,
   "standardSortMethod": true,
   "stopSoundsOnStartup": false,
   "title": "",
-  "v": 209,
+  "v": 37,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -30,23 +30,6 @@
     }
   ],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1938,
-      "keepRatio": true,
-      "layer": "Background",
-      "name": "BackgroundColor",
-      "persistentUuid": "8f559c97-2934-49b4-b966-52040f462d82",
-      "width": 1099,
-      "x": -6,
-      "y": -6,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
